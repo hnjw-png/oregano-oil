@@ -1,0 +1,1 @@
+web: gunicorn oregano_oil.wsgi
