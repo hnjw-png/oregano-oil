@@ -117,7 +117,7 @@ WSGI_APPLICATION = 'oregano_oil.wsgi.application'
 #}
 
 DATABASES = {
-   'default': dj_database_url.parse(' postgres://lzdxfpwz:tedcSuQ0RyI1PmKhlU3E34agV5vXIjTq@cornelius.db.elephantsql.com/lzdxfpwz')
+   'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
