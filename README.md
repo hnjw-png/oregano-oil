@@ -1,39 +1,133 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+## Purpose of the Website
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The purpose of this e-commerence website, is that it is a shop for oregono oil and other infusions. You will be able to buy different types of infused oil, as well as pure oil. This site will contain 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+# User Experience/User Interface (UX/UI)
 
-## Codeanywhere Reminders
+## First Time user goals:
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+When the visitor first visits the restaurant booking system:
 
-`python3 -m http.server`
+* The homepage should be clear of what the websites goals are.
+* The booking form should be clear and show which dates are booked and which are not.
+* The booking form should give options to book a event or a table.
+* The table booking should give the following options: How many, time and date.
+* The events booking form should give the following options: How many, time, , as well as which event is requested.
+* The site should look good and function on all devices.
+* You shoud be able enter your name and email and receive a booking confirmation on the screen.
+* The comments and likes section, should be clear and should allow logged in clients to edit there own posts, and like and or unlike.
+* The comments section, eventually should act more as a review section, but this will be made in future as a fucntionality improvement.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Frequent Visitor goals:
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+* There should be a place where customers can log in, if they wish.
+* As a frequent visitor you should be greeted by colourful but soft graphics. The site is to be used for bookngs, but in the future could as a website for a restuarant, as for the moment this is a separate booking site to the restaurants own site.
+* You shoukd be able to log in and see your booked tabkes or event...though this is a function I plan to add in the future.
 
-`http_server`
+## Website owner goals:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* In the site there is a admin page, inside this page it records all comments and likes to be controlled by the website owner.
+* I have used the superuser function, to create a private admin log in for the website ownwer.
+* The admin page is also connected to the bookings form, so the site owner can see booking made for both events and tables.
+* The website should be useful to the restaurant, easy to use and provides a better solution than other third party booking systems.
+* The site is intended to make it easier for the owner to keep track of bookings and avoid extra costs of using a third party booking system.
+* A future function woul be a function in the admin page that gives the administrator a oppurtunity to decline bookings.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+# Color Scheme
 
-To log into the Heroku toolbelt CLI:
+The colour scheme is that of a white background to keep things professional and then pops of colour in the site. The colours will be based upon more natural hues, such as:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* blue, green and yellow.
+* normal shade of white
+* basic shade of black
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  The reason for the colou choice is the restaraunt is a based upon salad and healthy food, so it made sense to use more natural colours from nature.
 
----
+# Typography
 
-Happy coding!
+I choose the font '' this font has a nice clear look, which is a little bit like clear fancy handwriting, this stands out well and fits the style of the restaurant.
+
+
+# Wireframes
+ADD WIREFRAMES.
+
+## Features
+
+# Responsiveness:
+
+This website fits to size on all types of devices. From laptop to mobile phone. 
+
+# Features:
+
+## Comments Section:
+
+
+
+## Booking form:
+
+
+
+### Table bookings:
+
+
+
+### Events bookings:
+
+
+
+## Log in:
+
+
+
+## Admin page:
+
+
+
+# Possible Future Features:
+
+
+
+# Techologies used
+
+Languages used:
+
+* HTML
+* CSS
+* PYTHON
+* DJANGO
+
+# Applications used:
+
+* Google Fonts fonts downloaded from Google Fonts.
+* Fontawesome icons downloaded from Font Awesome.com.
+* GitHub to store the projects code.
+* Gitpages to deploy the site.
+* Chrome Developer Tools for layout and responsive testing.
+* favICO.com for creating favicon.
+* W3 Validator to test html and css code.
+
+## Sources
+
+## Testing
+
+# Lighthouse: 
+# CSS and HTML Validator:
+
+
+# DEPLOYMENT
+
+ https://hnjw-png.github.io/DJANGOBLOG/
+
+ THIS IS APPEARING S THE README, BECAUSE THE DJANGO FRAMEWORK IS NOT FINISHED UNFORTUNETLY.
+
+
+
+
+# Bug fixes
+
+*
+
+# Deployment:
