@@ -114,7 +114,7 @@ Languages used:
 * W3 Validator to test html and css code.
 
 ## Sources
-Django help sheet, code institute material, stack overflow and tutoring advice.
+Django help sheet, code institute material, stack overflow and tutoring advice. I had help from a tutor to set up my env.py file. And I go advice on heroku, and he helped me fix a bug as I duplicated my app.
 
 ## Testing
 Due to some issues that need to be fixed, it has not been tested yet. 
@@ -138,5 +138,3 @@ Due to some issues that need to be fixed, it has not been tested yet.
 * Right now ths css does not appear due to a static file problem.
 
 * Right now you can register and log in, but right now the product page still have some issues I need to go and look back upon.
-
-# Deployment:
