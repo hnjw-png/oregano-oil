@@ -125,7 +125,7 @@ Due to some issues that need to be fixed, it has not been tested yet.
 
 # DEPLOYMENT
 
- I have deployed my project to heroku, I did this using the heroku cli, and the gitub terminal. I have also attached my elephantsql instance. 
+ I have deployed my project to heroku, I did this using the heroku cli, and the gitub terminal. I have also attached my elephantsql instance. Here is the link: https://oreganooil1-2ce75722cde3.herokuapp.com/
 
 ![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/61702acf-94b0-476b-a95b-2d102fb6114f)
 
