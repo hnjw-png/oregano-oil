@@ -32,7 +32,7 @@ When the visitor first visits the restaurant booking system:
 ## Website owner goals:
 
 * In the site there is a admin page, here you can add all products and pictures.
-* I have used the superuser function, to create a private admin log in for the website ownwer.
+* I have used the superuser function, to create a private admin log in for the website owner.
 * The admin page is also connected, so the site owner can manage the products, pictires, prices and info.
 
 
@@ -63,18 +63,22 @@ This website fits to size on all types of devices. From laptop to mobile phone.
 # Features:
 
 ## Register Page:
+![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/be850a8e-eae9-4470-84a0-12210f052d18)
 
 
 
 ## Log in Page:
+![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/6f0eb226-ce41-4c82-bc89-ed289139365f)
 
 
 
 ### Products page and ajoining shortcuts:
+![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/affa9df9-16f6-4aec-a0c8-859d269d9e47)
 
 
 
 ### Homepage:
+![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/8d61a654-557a-4e87-8223-0b06cef5e55f)
 
 
 
@@ -110,8 +114,10 @@ Languages used:
 * W3 Validator to test html and css code.
 
 ## Sources
+Django help sheet, code institute material, stack overflow and tutoring advice.
 
 ## Testing
+Due to some issues that need to be fixed, it has not been tested yet. 
 
 # Lighthouse: 
 # CSS and HTML Validator:
@@ -119,13 +125,18 @@ Languages used:
 
 # DEPLOYMENT
 
- I have deployed my project to heroku, I did this using the heroku cli, and the gitub terminal. I have also attcahed my elephantsql instance. 
+ I have deployed my project to heroku, I did this using the heroku cli, and the gitub terminal. I have also attached my elephantsql instance. 
 
+![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/61702acf-94b0-476b-a95b-2d102fb6114f)
 
 # Bug fixes
 
 * There is still much left to do on this site, I have created the django model for the social media account, products, home page and base header and logo.
 
 *In the future I will add all the products and a section for testimonials.
+
+* Right now ths css does not appear due to a static file problem.
+
+* Right now you can register and log in, but right now the product page still have some issues I need to go and look back upon.
 
 # Deployment:
