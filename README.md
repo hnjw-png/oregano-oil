@@ -2,7 +2,7 @@
 
 ## Purpose of the Website
 
-The purpose of this e-commerence website, is that it is a shop for oregono oil and other infusions. You will be able to buy different types of infused oil, as well as pure oil. This site will contain 
+The purpose of this e-commerence website, is that it is a shop for oregono oil and other infusions. You will be able to buy different types of infused oil, as well as pure oil..you will also be able to buy clothing and merchanize. The purpose of the site is to be a easy understandable purchasing online shop.
 
 # User Experience/User Interface (UX/UI)
 
@@ -11,29 +11,29 @@ The purpose of this e-commerence website, is that it is a shop for oregono oil a
 When the visitor first visits the restaurant booking system:
 
 * The homepage should be clear of what the websites goals are.
-* The booking form should be clear and show which dates are booked and which are not.
-* The booking form should give options to book a event or a table.
-* The table booking should give the following options: How many, time and date.
-* The events booking form should give the following options: How many, time, , as well as which event is requested.
-* The site should look good and function on all devices.
-* You shoud be able enter your name and email and receive a booking confirmation on the screen.
-* The comments and likes section, should be clear and should allow logged in clients to edit there own posts, and like and or unlike.
-* The comments section, eventually should act more as a review section, but this will be made in future as a fucntionality improvement.
+* The webpage will clearly show you what you can buy.
+* When you chose a item, you should be able to pick how many you would like to pick.
+* The header and footer should be clear and easy for the customer to navigate.
+* The customer should be able to make a account.
+* The customer should be able to create testimonials.
+* The user should be able to toggle the shopping basket, if they wish to add or delete.
+* There should be clear pictures and information of the uses of the oil.
+* The customer should be able to securely pay for a item.
+* The customers log in information and payment information is protected.
 
 ## Frequent Visitor goals:
 
 * There should be a place where customers can log in, if they wish.
-* As a frequent visitor you should be greeted by colourful but soft graphics. The site is to be used for bookngs, but in the future could as a website for a restuarant, as for the moment this is a separate booking site to the restaurants own site.
-* You shoukd be able to log in and see your booked tabkes or event...though this is a function I plan to add in the future.
+* The customer should be able to browse, shop and pay for items on the site.
+* The site should be accessible, with or without a account.
+* The site should promote business and give explanantion on what the product is and why it promotes health, this should generate more sales.
+* The site works as a iformation site as well as a shop. 
 
 ## Website owner goals:
 
-* In the site there is a admin page, inside this page it records all comments and likes to be controlled by the website owner.
+* In the site there is a admin page, here you can add all products and pictures.
 * I have used the superuser function, to create a private admin log in for the website ownwer.
-* The admin page is also connected to the bookings form, so the site owner can see booking made for both events and tables.
-* The website should be useful to the restaurant, easy to use and provides a better solution than other third party booking systems.
-* The site is intended to make it easier for the owner to keep track of bookings and avoid extra costs of using a third party booking system.
-* A future function woul be a function in the admin page that gives the administrator a oppurtunity to decline bookings.
+* The admin page is also connected, so the site owner can manage the products, pictires, prices and info.
 
 
 # Color Scheme
@@ -44,7 +44,7 @@ The colour scheme is that of a white background to keep things professional and 
 * normal shade of white
 * basic shade of black
 
-  The reason for the colou choice is the restaraunt is a based upon salad and healthy food, so it made sense to use more natural colours from nature.
+  The reason for the colou choice is a health product, so it made sense to use more natural colours from nature.
 
 # Typography
 
@@ -62,23 +62,23 @@ This website fits to size on all types of devices. From laptop to mobile phone.
 
 # Features:
 
-## Comments Section:
+## Register Page:
 
 
 
-## Booking form:
+## Log in Page:
 
 
 
-### Table bookings:
+### Products page and ajoining shortcuts:
 
 
 
-### Events bookings:
+### Homepage:
 
 
 
-## Log in:
+## Basket:
 
 
 
@@ -119,15 +119,13 @@ Languages used:
 
 # DEPLOYMENT
 
- https://hnjw-png.github.io/DJANGOBLOG/
-
- THIS IS APPEARING S THE README, BECAUSE THE DJANGO FRAMEWORK IS NOT FINISHED UNFORTUNETLY.
-
-
+ I have deployed my project to heroku, I did this using the heroku cli, and the gitub terminal. I have also attcahed my elephantsql instance. 
 
 
 # Bug fixes
 
-*
+* There is still much left to do on this site, I have created the django model for the social media account, products, home page and base header and logo.
+
+*In the future I will add all the products and a section for testimonials.
 
 # Deployment:
