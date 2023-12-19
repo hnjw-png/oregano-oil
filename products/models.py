@@ -5,6 +5,8 @@ class Category(models.Model):
     slug = models.SlugField()
 
     class Meta: ordering = ('name',)
+    verbose_name = "Category"
+    verbose_name_plural = "Categories"
 
     def _str_(self):
         return self.name
@@ -20,6 +22,7 @@ class Product(models.Model):
 
     class Meta:
         ordering = ('-created_at',)
+        
 
     def _str_(self):
         return self.name
