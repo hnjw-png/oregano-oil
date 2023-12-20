@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product
+from .models import Product, Image
 
 # Create your views here.
 
@@ -59,3 +59,26 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+def product_view(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        description = request.POST.get('description')
+        product = Product(name=name, description=description)
+        product.save()
+        images = request.FILES.getlist('images')
+        for image in images:
+            img = Image(product=product, image=image)
+            img.save()
+    return render(request, 'product.html')
+
+def images_by_product_name(request):
+    if request.method == 'POST':
+        product_name = request.POST.get('name')
+        try:
+            product = Product.objects.get(name=product_name)
+            images = Image.objects.filter(product=product)
+        except Product.DoesNotExist:
+            images = None
+    else:
+        images = None
+    return render(request, 'images.html', {'images': images}) 
