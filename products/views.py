@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Image
+from django.http import JsonResponse
 
 # Create your views here.
 
@@ -71,6 +72,7 @@ def product_view(request):
             img.save()
     return render(request, 'product.html')
 
+
 def images_by_product_name(request):
     if request.method == 'POST':
         product_name = request.POST.get('name')
@@ -79,6 +81,13 @@ def images_by_product_name(request):
             images = Image.objects.filter(product=product)
         except Product.DoesNotExist:
             images = None
+
+        if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+            # AJAX request
+            data = []
+            for image in images:
+                data.append({'url': image.image.url})
+            return JsonResponse({'images': data})
     else:
         images = None
-    return render(request, 'images.html', {'images': images}) 
+    return render(request, 'images.html', {'images': images})
