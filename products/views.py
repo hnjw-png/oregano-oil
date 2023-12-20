@@ -60,34 +60,3 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-def product_view(request):
-    if request.method == 'POST':
-        name = request.POST.get('name')
-        description = request.POST.get('description')
-        product = Product(name=name, description=description)
-        product.save()
-        images = request.FILES.getlist('images')
-        for image in images:
-            img = Image(product=product, image=image)
-            img.save()
-    return render(request, 'product.html')
-
-
-def images_by_product_name(request):
-    if request.method == 'POST':
-        product_name = request.POST.get('name')
-        try:
-            product = Product.objects.get(name=product_name)
-            images = Image.objects.filter(product=product)
-        except Product.DoesNotExist:
-            images = None
-
-        if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
-            # AJAX request
-            data = []
-            for image in images:
-                data.append({'url': image.image.url})
-            return JsonResponse({'images': data})
-    else:
-        images = None
-    return render(request, 'images.html', {'images': images})
