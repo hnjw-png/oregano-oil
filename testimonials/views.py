@@ -8,7 +8,7 @@ from .models import Testimonials
 from .forms import TestimonialsForm
 
 @login_required
-def Testimonials(request):
+def add_testimonial(request):
     """ Add a Testimonial to the store """
     if request.method == 'POST':
         form = TestimonialsForm(request.POST, request.FILES)
