@@ -18,6 +18,8 @@
         <p>{{ testimonial.created_at }}</p>
         <p>{{ testimonial.Product }}</p>
         <!-- Add more event details here -->
+        <a href="{% url 'TestimonialsUpdateView' testimonials.id %}">Update Testimonial</a> 
+        <a class="text-danger" href="{% url 'TestimonialsDeleteView' testimonials.id %}">Delete</a>
     </div>
 {% endfor %}
 

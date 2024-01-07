@@ -11,11 +11,11 @@ class TestimonialsForm(forms.ModelForm):
         user = get_user(self.instance)
 
         # Set the created_user and updated_user fields
-        if not self.instance.pk:  # This is a new event (create)
+        if not self.instance.pk:  # This is a new testimonial (create)
             self.instance.created_user = user
         self.instance.updated_user = user
 
         # Call the parent class's save method to save the instance
-        instance = super(EventForm, self).save(commit=commit)
+        instance = super(TestimonialsForm, self).save(commit=commit)
 
         return instance

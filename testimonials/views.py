@@ -4,10 +4,17 @@ from django.contrib.auth.decorators import login_required
 from .models import Testimonials
 from .forms import TestimonialsForm
 
+
+
+def Testimonial(request):
+    """ A view to return the index page """
+
+    return render(request, 'testimonials/view_testimonials')
+
 class TestimonialsListView(ListView):
     model = Testimonials
     template_name = 'testimonials/list_testimonials.html'  # Create this template to display the list of events
-    context_object_name = 'events'
+    context_object_name = 'Testimonials info'
 
 @login_required
 class TestimonialsCreateView(CreateView):

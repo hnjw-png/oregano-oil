@@ -29,5 +29,8 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
-    <button type="submit">Save Changes</button>
+    
 </form>
+
+    <a class="text-danger" href="{% url 'TestimonialsDeleteView' testimonials.id %}">Delete</a>
+    <a href="{% url 'TestimonialsListView' %}"><button type ="submit">Submit</button></a> 

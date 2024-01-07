@@ -6,6 +6,6 @@ urlpatterns = [
     path('CreateView/', views.TestimonialsCreateView, name='TestimonialsCreateView'),
     path('UpdateView/', views.TestimonialsUpdateView, name='TestimonialsUpdateView'),
     path('DeleteView/', views.TestimonialsDeleteView, name='TestimonialsDeleteView'),
-    
+    path('', views.view_testimonials, name='testimonials')
 ]
 
