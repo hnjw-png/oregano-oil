@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% for Testimonial in Testimonials %}
+    <div class="testimonial-item">
+        <h2>{{ testimonial.title }}</h2>
+        <p>{{ testimonial.slug }}</p>
+        <p>{{ testimonial.description }}</p>
+        <p>{{ testimonial.price }}</p>
+        <p>{{ testimonial.created_at }}</p>
+        <p>{{ testimonial.Product }}</p>
+        <!-- Add more event details here -->
+    </div>
+{% endfor %}
+
+
