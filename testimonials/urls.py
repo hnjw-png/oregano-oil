@@ -2,5 +2,10 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('add/', views.add_testimonial, name='add_testimonial'),
+    path('ListView/', views.TestimonialsListView, name='TestimonialsListView'),
+    path('CreateView/', views.TestimonialsCreateView, name='TestimonialsCreateView'),
+    path('UpdateView/', views.TestimonialsUpdateView, name='TestimonialsUpdateView'),
+    path('DeleteView/', views.TestimonialsDeleteView, name='TestimonialsDeleteView'),
+    
 ]
+
