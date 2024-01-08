@@ -3,8 +3,8 @@ from .models import Testimonials
 
 class TestimonialsForm(forms.ModelForm):
     class Meta:
-        model = Event
-        fields = ['name', 'slug', 'description', 'price', 'created_at', 'Product.']
+        model = Testimonials
+        fields = ['name', 'slug', 'description', 'price']
     
     def save(self, commit=True):
         # Get the current user

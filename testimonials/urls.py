@@ -6,5 +6,5 @@ urlpatterns = [
     path('CreateView/', views.TestimonialsCreateView, name='TestimonialsCreateView'),
     path('UpdateView//<int:testimonial_id>/', views.TestimonialsUpdateView, name='TestimonialsUpdateView'),
     path('DeleteView//<int:testimonial_id>/', views.TestimonialsDeleteView, name='TestimonialsDeleteView'),
-    path('Testimonials/', views.view_Testimonials, name='Testimonials'),
+    path('Testimonials/', views.Testimonials, name='Testimonials'),
 ]

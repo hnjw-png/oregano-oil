@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Testimonials, Product
+from .models import Testimonials
 from .forms import TestimonialsForm
 
 def Testimonials(request):
