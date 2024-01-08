@@ -8,7 +8,6 @@ class Testimonials(models.Model):
     description = models.TextField(blank=True, null=True)
     price = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
-    Product = models.foreignKey(Product, on_delete=models.SET_NULL, null=True)
 
     class Meta:
         ordering = ('-created_at',)

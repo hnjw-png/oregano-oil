@@ -1,39 +1,57 @@
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView
-from django.urls import reverse_lazy
+
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import Testimonials
+from django.db.models import Q
+from django.db.models.functions import Lower
+from .models import Testimonials, Product
 from .forms import TestimonialsForm
 
-
-
-def Testimonial(request):
+def Testimonials(request):
     """ A view to return the index page """
 
     return render(request, 'testimonials/view_testimonials')
 
-class TestimonialsListView(ListView):
+def TestimonialsListView(ListView):
+    """ A view to return the index page """
+
+    return render(request, 'testimonials/list_testimonials')
+    
+""" a view to create a pre-filled in testimonial form or a blank form, whilst the user is logged in. """
+
+@login_required   
+def TestimonialsCreateView(request):
+    # if this is a POST request we need to process the form data
+    if request.method == "POST":
+        """ create a form instance, and fill it wite testimonial information from that request """
+        
+        form = TestimonialsForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            return messages.success(request, 'Testimonial deleted!')
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = TestimonialsForm()
+
+    return render(request, "create_testimonials.html", {"form": form})
+
+""" a view to update or edit a existing testimonial, whilst the user  is logged in. """
+
+@login_required  
+def TestimonialsUpdateView(request, id):
     model = Testimonials
-    template_name = 'testimonials/list_testimonials.html'  # Create this template to display the list of events
-    context_object_name = 'Testimonials info'
+    Testimonial = get_object_or_404(Testimonials, id=testimonial_id)
+
+    if request.method == 'GET':
+        context = {'form': TestimonialsForm(instance=post), 'id': id}
+        return render(request,'testimonials/edit_testimonials.html',context)
+
+""" a view to delete a testimonial, whilst logged in. """
 
 @login_required
-class TestimonialsCreateView(CreateView):
+def TestimonialsDeleteView(request, testimonial_id):
     model = Testimonials
-    form_class = TestimonialsForm
-    template_name = 'testimonials/create_testimonials.html'  # Create this template for the testimonial creation form
-    success_url = reverse_lazy('testimonial_list')  # Redirect to the testimonial list after successful creation
-
-@login_required
-class TestimonialsUpdateView(UpdateView):
-    model = Testimonials
-    form_class = TestimonialsForm
-    template_name = 'testimonial/edit_testimonials.html'  # Create this template for the testimonial update form
-    context_object_name = 'Testimonial'  # Set the testimonial name
-    success_url = reverse_lazy('list_testimonials')  # Redirect to the testimonial list after successful update
-
-@login_required
-class TestimonialsDeleteView(DeleteView):
-    model = Event
-    template_name = 'testimonial/testimonial_confirm_delete.html'  # Create this template for the delete a testimonial page
-    context_object_name = 'testimonial'  # Set the context object name
-    success_url = reverse_lazy('list_testimonial')  # Redirect to the testimonial list after successful deletion
+    Testimonial = get_object_or_404(Testimonial, pk=testimonial_id)
+    testimonial.delete()
+    messages.success(request, 'Testimonial deleted!')
+    return redirect(reverse('testimonial_list'))
