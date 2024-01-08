@@ -28,7 +28,7 @@ def TestimonialsCreateView(request):
         form = TestimonialsForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
-            return messages.success(request, 'Testimonial deleted!')
+            return messages.success(request, 'Testimonial created!')
     # if a GET (or any other method) we'll create a blank form
     else:
         form = TestimonialsForm()

@@ -4,7 +4,7 @@ from .models import Testimonials
 class TestimonialsForm(forms.ModelForm):
     class Meta:
         model = Testimonials
-        fields = ['name', 'slug', 'description', 'price']
+        fields = ['name','title', 'slug', 'description', 'price']
     
     def save(self, commit=True):
         # Get the current user

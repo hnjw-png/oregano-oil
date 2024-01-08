@@ -4,6 +4,7 @@ from django.db import models
 
 class Testimonials(models.Model):
     name = models.CharField(max_length=255)
+    title = models.CharField(max_length=255)
     slug = models.SlugField()
     description = models.TextField(blank=True, null=True)
     price = models.IntegerField()
