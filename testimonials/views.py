@@ -10,12 +10,12 @@ from .forms import TestimonialsForm
 def Testimonials(request):
     """ A view to return the index page """
 
-    return render(request, 'testimonials/view_testimonials')
+    return render(request, 'testimonials/view_testimonials.html')
 
 def TestimonialsListView(ListView):
     """ A view to return the index page """
 
-    return render(request, 'testimonials/list_testimonials')
+    return render(request, 'testimonials/list_testimonials.html')
     
 """ a view to create a pre-filled in testimonial form or a blank form, whilst the user is logged in. """
 
