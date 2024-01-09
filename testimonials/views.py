@@ -12,39 +12,36 @@ def Testimonials(request):
 
     return render(request, 'testimonials/view_testimonials.html')
 
-def TestimonialsListView(ListView):
+def TestimonialsListView(request, testimonial_id):
     """ A view to return the index page """
-
-    return render(request, 'testimonials/list_testimonials.html')
+    Testimonials = Reservation.objects.all()
+    return render(request, 'testimonials/list_testimonials.html', {'Testimonials': Testimonials})
+   
     
 """ a view to create a pre-filled in testimonial form or a blank form, whilst the user is logged in. """
 
 @login_required   
 def TestimonialsCreateView(request):
     # if this is a POST request we need to process the form data
-    if request.method == "POST":
-        """ create a form instance, and fill it wite testimonial information from that request """
-        
-        form = TestimonialsForm(request.POST)
-        # check whether it's valid:
+    if request.method == 'POST':
+        form = ReservationForm(request.POST)
         if form.is_valid():
-            return messages.success(request, 'Testimonial created!')
-    # if a GET (or any other method) we'll create a blank form
+            Testimonials = form.save(commit=False)
+            Testimonials.save()
+            return redirect('testimonials/view_testimonials', Testimonials_id=Testimonials.id)
     else:
         form = TestimonialsForm()
-
-    return render(request, "create_testimonials.html", {"form": form})
-
-""" a view to update or edit a existing testimonial, whilst the user  is logged in. """
+    return render(request, 'testimonials/testimonials_form.html', {'form': form})
 
 @login_required  
 def TestimonialsUpdateView(request, id):
-    model = Testimonials
-    Testimonial = get_object_or_404(Testimonials, id=testimonial_id)
+    Testimonials = Testimonials.objects.get(pk=Testimonials_id)
+    form = TestimonialsForm(request.POST or None, instance=Testimonials)
+    if form.is_valid():
+        form.save()
+        return redirect('testimonials/testimonial_form', Testimonials_id=Testimonials.id)
 
-    if request.method == 'GET':
-        context = {'form': TestimonialsForm(instance=post), 'id': id}
-        return render(request,'testimonials/edit_testimonials.html',context)
+    return render(request, 'testimonials/testimonials_form.html', {'testimonial':testimonial, 'form':form})
 
 """ a view to delete a testimonial, whilst logged in. """
 
@@ -54,4 +51,6 @@ def TestimonialsDeleteView(request, testimonial_id):
     Testimonial = get_object_or_404(Testimonial, pk=testimonial_id)
     testimonial.delete()
     messages.success(request, 'Testimonial deleted!')
-    return redirect(reverse('testimonial_list'))
+    return redirect(reverse('testimonials/testimonial_list'))
+
+
