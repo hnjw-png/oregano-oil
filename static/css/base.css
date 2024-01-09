@@ -21,6 +21,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    color: green;
 }
 
 .main-logo-link {
@@ -28,7 +29,7 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: green;
     color: white;
     min-width: 260px;
 }
@@ -62,7 +63,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: green !important;
 }
 
 .border-black {
