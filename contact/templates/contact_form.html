@@ -15,10 +15,11 @@
 <form action="/contact/" method="post">
     {% csrf_token %}
     {% for field in form %}
-        <div class="fieldWrapper">
-            {{ field.errors }}
-            {{ field.label_tag }} {{ field }}
-        </div>
+        {% if field.name != 'image' %}
+            {{ field | as_crispy_field }}
+        {% else %}
+            {{ field }}
+        {% endif %}
     {% endfor %}
     <input type="submit" value="Submit">
  </form>
