@@ -2,7 +2,17 @@
 
 ## Purpose of the Website
 
-The purpose of this e-commerence website, is that it is a shop for oregono oil and other infusions. You will be able to buy different types of infused oil, as well as pure oil..you will also be able to buy clothing and merchanize. The purpose of the site is to be a easy understandable purchasing online shop.
+The purpose of this e-commerence website, is that it is a shop for oregono oil and other infusions. You will be able to buy different types of infused oil, as well as pure oil. 
+
+The purpose of the site is to be a easy understandable purchasing online shop, that will provide information about the health product, as well as a interactive place where a logged in user can add there own testimonial, or like and unlike the information post in the info page. 
+The site should provide information about the products through a easy accessible nav bar,that directs the user to the info page. 
+
+The user whilst logged in should be able to create their own testimonials, like or unlike the information post. Any user should be able to access a contact form, which sends messages directly to the admin of the sites' email. 
+
+Primarily being a site to purchase oregano oil and ajoining products, the user logged in or out should be able to add a product to their basket, navigate to the basket and purchase there items, using stripe. If the user is a signed up user, they can save what's in their basket.
+
+Other attribrutes to the site include a useful admin page, where the super user can easily navigate and add/edit or delete products.As well as a  product management page on the website, which allows the allowed users to add a product.
+
 
 # User Experience/User Interface (UX/UI)
 
@@ -20,20 +30,33 @@ When the visitor first visits the restaurant booking system:
 * There should be clear pictures and information of the uses of the oil.
 * The customer should be able to securely pay for a item.
 * The customers log in information and payment information is protected.
+* The customer can fill out a contact form and contact the website owner directy to there email.
+* The customer while logged in should be able to 'like' and then 'dislike' the info pages post.
+* The customer can navigate to a bespoke facebook page, directly through the site.
+* The customer should be able to sign up to a newsletter.
+* A logged in customer will be able to edit, update, create and delete there own testimonials.
+* 
 
 ## Frequent Visitor goals:
 
-* There should be a place where customers can log in, if they wish.
-* The customer should be able to browse, shop and pay for items on the site.
+* There should be a place where customers can sign up and/or log in, if they wish.
+* The customer should be able to browse, shop and pay for items on the site securely.
 * The site should be accessible, with or without a account.
 * The site should promote business and give explanantion on what the product is and why it promotes health, this should generate more sales.
-* The site works as a iformation site as well as a shop. 
+* The site works as a information site as well as a shop. 
+* The website linking to social media and newsletters promotes business and sales.
+* The site should be a place where customers can find out information about the product.
+* The customer should trust the product, due to the information provided in the site.
+* Customer contact should be smooth, the website should receive all messages.
 
 ## Website owner goals:
 
-* In the site there is a admin page, here you can add all products and pictures.
-* I have used the superuser function, to create a private admin log in for the website owner.
-* The admin page is also connected, so the site owner can manage the products, pictires, prices and info.
+* Provide a place the website owner can freely edit at anytime(admin page)
+* Provide health advice to customers.
+* Provide a affordable product.
+* Provide a product and a support network.
+* Promote the uses of herbal oils.
+* Generate sales through trust and pricing.
 
 
 # Color Scheme
