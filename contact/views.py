@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 
-from .models import contact
+from .models import Contact
 from .forms import ContactForm
 
 def Contact(request):
