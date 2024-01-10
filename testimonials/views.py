@@ -25,11 +25,11 @@ def TestimonialsListView(request, testimonial_id):
     
 """ a view to create a pre-filled in testimonial form or a blank form, whilst the user is logged in. """
 
-@login_required   
+   
 def TestimonialsCreateView(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
-        form = ReservationForm(request.POST)
+        form = TestimonialsForm(request.POST)
         if form.is_valid():
             Testimonials = form.save(commit=False)
             Testimonials.save()

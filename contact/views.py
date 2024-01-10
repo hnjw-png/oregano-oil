@@ -8,9 +8,9 @@ def Contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            subject = form.cleaned_data["What's your question?"]
-            message = form.cleaned_data["Write your message here."]
-            sender = form.cleaned_data["sender"]
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+            sender = form.cleaned_data['sender']
 
             recipients = ["hollyyeh12@gmail.com"]
 

@@ -9,19 +9,22 @@
     </div>
 {% endblock %}
 
-<div class="overlay"></div>
+{% block content %}
+    <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
-                <h2 class="logo-font mb-4">Create Testimonial</h2>
-                <h5 class="text-muted">Add a Testimonial</h5>
+                <h2 class="logo-font mb-4">Write your Testimonial!</h2>
+                <h5 class="text-muted">Write a informative and truthful testimonial here:</h5>
                 <hr>
             </div>
         </div>
+
+
         <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST"  class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'TestimonialsCreateView' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
                         {% if field.name != 'image' %}
@@ -30,6 +33,11 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
-
-    <button type="submit">Create Testimonial</button>
-</form>
+                    <div class="text-right">
+                        <button class="btn btn-black rounded-0" type="submit">Create Testimonial</button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+{% endblock %}
