@@ -36,7 +36,7 @@ def TestimonialsCreateView(request):
             return redirect('testimonials/view_testimonials', Testimonials_id=Testimonials.id)
     else:
         form = TestimonialsForm()
-    return render(request, 'testimonials/testimonials_form.html', {'form': form})
+    return render(request, 'testimonials/create_testimonial.html', {'form': form})
 
 @login_required  
 def TestimonialsUpdateView(request, id):
