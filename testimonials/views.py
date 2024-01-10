@@ -12,9 +12,14 @@ def Testimonials(request):
 
     return render(request, 'testimonials/view_testimonials.html')
 
+def CreateTestimonials(request):
+    """ A view to return the index page """
+
+    return render(request, 'testimonials/create_testimonial.html')
+
 def TestimonialsListView(request, testimonial_id):
     """ A view to return the index page """
-    Testimonials = Reservation.objects.all()
+    Testimonials = Testimonials.objects.all()
     return render(request, 'testimonials/list_testimonials.html', {'Testimonials': Testimonials})
    
     

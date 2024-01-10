@@ -9,27 +9,25 @@
     </div>
 {% endblock %}
 
-
-<div class="overlay"></div>
+{% block content %}
+    <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
                 <h2 class="logo-font mb-4">Testimonials</h2>
-                <h5 class="text-muted">Currrent Testimonials</h5>
+                <h5 class="text-muted">See Testimonials:</h5>
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-6">
                 
-                <button type="submit" href="{% url 'TestimonialsCreateView' %}" >Create Testimonial</button>
-                <hr>
-                <h2 class="logo-font mb-4">{{ testimonial.title }}</h2>
-                <hr>
+                <button type="submit" href="{% url 'CreateTestimonials' %}" >Create Testimonial</button>
+                
             </div>
         </div>
-
+        {% endblock %}
         
 
 
