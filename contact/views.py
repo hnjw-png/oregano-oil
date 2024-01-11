@@ -11,8 +11,9 @@ def Contact(request):
             subject = form.cleaned_data['subject']
             message = form.cleaned_data['message']
             sender = form.cleaned_data['sender']
+            email =form.cleaned_date['email']
 
-            recipients = ["hollyyeh12@gmail.com"]
+            recipients = ["yayogronstroms@gmail.com"]
 
             send_mail(subject, message, sender, recipients)
             return messages.success(request, 'Contacted!')
