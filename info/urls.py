@@ -3,6 +3,6 @@ from .import views
 
 urlpatterns = [
     path('Info', views.Info, name='Info'),
-    path('like/<slug:slug>', views.LikeRequest, name='LikeRequest'),
+    path('InfoLike/<int:pk>', views.InfoLike, name="InfoLike"),
 ]
 

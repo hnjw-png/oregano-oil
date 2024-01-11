@@ -22,19 +22,21 @@
         </div>
         <strong>
             {% if user.is_authenticated %}
-            <form class="d-inline" action="{% url 'LikeRequest' like.slug %}" method="POST">
-                {% csrf_token %}
-                {% if liked %}
-                <button type="submit" value="{{likes.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
-                {% else %}
-                <button type="submit" value="{{likes.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
-                {% endif %}
+            {% if user.is_authenticated %}
+            <form action="{% url 'blogpost_like' object.id %}" method="POST">
+              {% csrf_token %}
+          
+              {% if post_is_liked %}
+              <button type="submit" name="InfoLike" value="{{object.id}}" class="btn btn-info">Unlike</button>
+              {% else %}
+              <button type="submit" name="InfoLike" value="{{object.id}}" class="btn btn-info">Like</button>
+              {% endif %}
             </form>
-            {% else %}
-            <span class="text-secondary"><i class="far fa-heart"></i></span>
-            {% endif %}
-        <!-- The number of likes goes before the closing strong tag -->
-        <span class="text-secondary">{{ like.number_of_likes }} </span>
+          {% else %}
+            <a class="btn btn-outline-info" href="{% url 'login' %}?next={{request.path}}">Log in to like this article!</a><br>
+          {% endif %}
+          <strong class="text-secondary">{{ number_of_likes }} Like{{ number_of_likes|pluralize }}</strong>
+          And we are done!
         </strong>
     </div>
     
