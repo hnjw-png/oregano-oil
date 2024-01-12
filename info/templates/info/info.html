@@ -21,23 +21,20 @@
             </div>
         </div>
         <strong>
-            {% if user.is_authenticated %}
-            {% if user.is_authenticated %}
-            <form action="{% url 'blogpost_like' object.id %}" method="POST">
+            <form action="" method="POST">
               {% csrf_token %}
-          
+            {% if request.user.is_authenticated %}
               {% if post_is_liked %}
               <button type="submit" name="InfoLike" value="{{object.id}}" class="btn btn-info">Unlike</button>
               {% else %}
               <button type="submit" name="InfoLike" value="{{object.id}}" class="btn btn-info">Like</button>
               {% endif %}
             </form>
-          {% else %}
-            <a class="btn btn-outline-info" href="{% url 'login' %}?next={{request.path}}">Log in to like this article!</a><br>
-          {% endif %}
-          <strong class="text-secondary">{{ number_of_likes }} Like{{ number_of_likes|pluralize }}</strong>
-          And we are done!
-        </strong>
-    </div>
-    
-    {% endblock %}
+            {% else %}
+            <a class="btn btn-outline-info" href="">Log in to like this article!</a><br>
+            {% endif %}
+            <strong class="text-secondary">{{ number_of_likes }} Like{{ number_of_likes|pluralize }}</strong>
+            And we are done!
+         </strong>
+     </div>
+ {% endblock %}

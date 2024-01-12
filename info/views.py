@@ -17,7 +17,7 @@ def InfoLike(request):
     else:
         post.likes.add(request.user)
 
-return HttpResponseRedirect(reverse('Info', args=[str(pk)]))
+    return HttpResponseRedirect(reverse('Info', args=[str(pk)]))
 
 
 def get_context_data(self, **kwargs):
