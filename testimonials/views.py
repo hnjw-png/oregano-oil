@@ -13,7 +13,7 @@ def Testimonials(request):
     return render(request, 'testimonials/view_testimonials.html')
 
 def CreateTestimonials(request):
-    """ A view to return the index page """
+    """ A view to return the create testimonial page """
 
     return render(request, 'testimonials/create_testimonial.html')
 
@@ -31,13 +31,22 @@ def TestimonialsCreateView(request):
     if request.method == 'POST':
         form = TestimonialsForm(request.POST)
         if form.is_valid():
-            Testimonials = form.save(commit=False)
+            Testimonials = form.save()
+            messages.success(request, 'Successfully added your Testimonial!')
+            return redirect(reverse('list_testimonials', args=[testimonials.id]))
             Testimonials.save()
             return redirect('testimonials/view_testimonials.html', Testimonials_id=Testimonials.id)
     else:
         form = TestimonialsForm()
-    return render(request, 'testimonials/testimonialsform.html', {'form': form})
+        
+    template = 'testimonials/testimonialsform.html'
+    context = {
+        'form': form,
+    }
 
+    return render(request, template, context)
+
+    return render(request, template, context)
 @login_required  
 def TestimonialsUpdateView(request, id):
     Testimonials = Testimonials.objects.get(pk=Testimonials_id)
