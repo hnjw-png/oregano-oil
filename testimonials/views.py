@@ -17,10 +17,10 @@ def CreateTestimonials(request):
 
     return render(request, 'testimonials/create_testimonial.html')
 
-def TestimonialsListView(request, testimonial_id):
+def TestimonialsListView(request, Testimonials_id):
     """ A view to return the index page """
     Testimonials = Testimonials.objects.all()
-    return render(request, 'testimonials/list_testimonials.html', {'Testimonials': Testimonials})
+    return render(request, 'testimonials/list_testimonials.html', {'testimonials': testimonials})
    
     
 """ a view to create a pre-filled in testimonial form or a blank form, whilst the user is logged in. """
@@ -33,10 +33,10 @@ def TestimonialsCreateView(request):
         if form.is_valid():
             Testimonials = form.save(commit=False)
             Testimonials.save()
-            return redirect('testimonials/view_testimonials', Testimonials_id=Testimonials.id)
+            return redirect('testimonials/view_testimonials.html', Testimonials_id=Testimonials.id)
     else:
         form = TestimonialsForm()
-    return render(request, 'testimonials/create_testimonial.html', {'form': form})
+    return render(request, 'testimonials/testimonialsform.html', {'form': form})
 
 @login_required  
 def TestimonialsUpdateView(request, id):
@@ -46,7 +46,7 @@ def TestimonialsUpdateView(request, id):
         form.save()
         return redirect('testimonials/testimonial_form', Testimonials_id=Testimonials.id)
 
-    return render(request, 'testimonials/testimonials_form.html', {'testimonial':testimonial, 'form':form})
+    return render(request, 'testimonials/testimonialsform.html', {'testimonial':testimonial, 'form':form})
 
 """ a view to delete a testimonial, whilst logged in. """
 
@@ -56,6 +56,6 @@ def TestimonialsDeleteView(request, testimonial_id):
     Testimonial = get_object_or_404(Testimonial, pk=testimonial_id)
     testimonial.delete()
     messages.success(request, 'Testimonial deleted!')
-    return redirect(reverse('testimonials/testimonial_list'))
+    return redirect(reverse('testimonials/testimonial_list.html'))
 
 
