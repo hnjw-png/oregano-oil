@@ -5,7 +5,7 @@ from .import views
 
 urlpatterns = [
     path('Info/', views.Info, name='Info'),
-    path('info/<int:pk>/AddLike', views.AddLike, name='addlike'),
-    path('info/<int:pk>/AddDisLike', views.AddDislike, name='dislike'),
+    path('AddLike//<int:pk>/', views.AddLike, name='addlike'),
+    path('AddDisLike//<int:pk>/', views.AddDislike, name='dislike'),
     
 ]

@@ -27,7 +27,7 @@
         </div>
         <strong>
             <div class="d-flex flex-row">
-                <form method="POST" action="{% url 'like' info.pk %}">
+                <form method="POST" action="{% url 'addlike' info.pk %}">
                     {% csrf_token %}
                     <input type="hidden" name="next" value="{{ request.path }}">
                     <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-up"></i> <span>{{ post.likes.all.count }}</span></button>
