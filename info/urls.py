@@ -1,8 +1,11 @@
-from django.urls import path
-from .import views 
+from django.urls import path 
+from .views import Info, AddLike, AddDislike
+from .import views
+
 
 urlpatterns = [
-    path('Info', views.Info, name='Info'),
-    path('InfoLike/<int:pk>', views.InfoLike, name="InfoLike"),
+    path('Info/', views.Info, name='Info'),
+    path('info/<int:pk>/AddLike', views.AddLike, name='addlike'),
+    path('info/<int:pk>/AddDisLike', views.AddDislike, name='dislike'),
+    
 ]
-

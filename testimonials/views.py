@@ -46,7 +46,8 @@ def TestimonialsCreateView(request):
 
     return render(request, template, context)
 
-    return render(request, template, context)
+   
+   
 @login_required  
 def TestimonialsUpdateView(request, id):
     Testimonials = Testimonials.objects.get(pk=Testimonials_id)

@@ -9,24 +9,43 @@ from django.contrib.auth.decorators import login_required
 def Info(request):
     return render(request, 'info/info.html')
 
-@login_required
-def InfoLike(request):
-    Info = get_object_or_404(Info, slug=slug)
-    if Info.likes.filter(id=request.user.id).exists():
-         Info.likes.remove(request.user)
-    else:
-        post.likes.add(request.user)
-
-    return HttpResponseRedirect(reverse('Info', args=[str(pk)]))
-
-
-def get_context_data(self, **kwargs):
-        data = super().get_context_data(**kwargs)
-
-        likes_connected = get_object_or_404(BlogPost, id=self.kwargs['pk'])
-        liked = False
-        if likes_connected.likes.filter(id=self.request.user.id).exists():
-            liked = True
-        data['number_of_likes'] = likes_connected.number_of_likes()
-        data['post_is_liked'] = liked
-        return data        
+class AddLike():
+    def post(self, request, pk, *args, **kwargs):
+        post = Post.objects.get(pk=pk)
+        is_dislike = False
+        for dislike in post.dislikes.all():
+            if dislike == request.user:
+                is_dislike = True
+                break
+        if is_dislike:
+            post.dislikes.remove(request.user)
+        is_like = False
+        for like in post.likes.all():
+            if like == request.user:
+                is_like = True
+                break
+        if not is_like: 
+            post.likes.add(request.user)
+        
+        if is_like:
+            post.likes.remove(request.user)
+class AddDislike():
+    def Info(self, request, pk, *args, **kwargs):
+        info = Info.objects.get(pk=pk)
+        is_like = False
+        for like in info.likes.all():
+            if like == request.user:
+                is_like = True
+                break
+        if is_like:
+            info.likes.remove(request.user)
+        is_dislike = False
+        for dislike in info.dislikes.all():
+            if dislike == request.user:
+                is_dislike = True
+                break
+        if not is_dislike: 
+            info.dislikes.add(request.user)
+        
+        if is_dislike:
+            info.dislikes.remove(request.user)
