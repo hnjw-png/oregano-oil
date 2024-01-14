@@ -161,3 +161,19 @@ Due to some issues that need to be fixed, it has not been tested yet.
 * Right now ths css does not appear due to a static file problem.
 
 * Right now you can register and log in, but right now the product page still have some issues I need to go and look back upon.
+
+
+copy
+
+https://pixabay.com/sv/photos/oregano-%C3%A4ng-n%C3%A4rbild-blomning-rosa-7317396/
+
+https://pixabay.com/sv/photos/oregano-l%C3%B6v-gr%C3%B6n-h%C3%A4lsa-gr%C3%B6n-h%C3%A4lsa-4338622/
+
+https://pixabay.com/photos/oil-garlic-food-fresh-spices-cook-1382420/
+
+https://pixabay.com/sv/photos/oregano-l%C3%B6v-%C3%B6rter-l%C3%B6vverk-f%C3%A4rsk-2662890/
+
+https://pixabay.com/sv/photos/tr%C3%A4dg%C3%A5rd-jorden-golv-sten-%C3%B6rtsten-731561/
+
+https://pixabay.com/sv/photos/familj-grundl%C3%A4ggande-utrustning-5227815/
+
