@@ -10,41 +10,31 @@ def Info(request):
     return render(request, 'info/info.html')
 
 def AddLike(request, *args, **kwargs):
-    is_dislike = False
-    for dislike in Info.dislike.all():
-        if dislike == request.user:
-            is_dislike = True
-            break
-    if is_dislike:
-        info.dislikes.remove(request.user)
-    is_like = False
-    for like in info.likes.all():
-        if like == request.user:
-            is_like = True
-            break
-    if not is_like: 
-        info.likes.add(request.user)
+    instance = LikeModel.objects.all().first()
     
-    if is_like:
-        info.likes.remove(request.user)
+    if instance == None:
+        instance = LikeModel.objects.create()
+        instance.save()
+        
+    if instance.likes.all().filter(id=request.user.id).exists():
+        instance.dislikes.remove(request.user.id)
+    else:
+        instance.likes.add(request.user.id)
+        
+    return render(request, 'info/info.html')
+
             
 def AddDislike(request, *args, **kwargs):
-    is_like = False
-    for like in info.likes.all():
-        if like == request.user:
-            is_like = True
-            break
-    if is_like:
-        Info.likes.remove(request.user)
-    is_dislike = False
-    for dislike in info.dislikes.all():
-        if dislike == request.user:
-            is_dislike = True
-            break
-    if not is_dislike: 
-        info.dislikes.add(request.user)
+    instance = LikeModel.objects.all().first()
     
-    if is_dislike:
-        info.dislikes.remove(request.user)
+    if instance == None:
+        instance = LikeModel.objects.create()
+        instance.save()
         
+    if instance.dislikes.all().filter(id=request.user.id).exists():
+        instance.likes.remove(request.user.id)
+    else:
+        instance.dislikes.add(request.user.id)
+        
+    return render(request, 'info/info.html')
 
