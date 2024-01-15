@@ -16,7 +16,7 @@
             <div class="col-12 col-md-6">
                 <hr>
                 <h2 class="logo-font mb-4">About us and Health Info</h2>
-                <h5 class="text-muted">Read below:</h5>:</h5>
+                <h5 class="text-muted">Scroll down to Like or Dislike this article:
                 <hr>
                 <p>Oregano Oil is antibacterial, antiviral and antifungal. It is a powerful antioxidant, anti-inflammator, antidiabetic, and have even been proven to suppress cancer.</p>
                 <p>Types of conditions that Oregano Oil can treat is very wide. It can be both used internally and exteriorly. Everything respitory illments to skin rashes.</p>
@@ -32,12 +32,14 @@
                     <input type="hidden" name="next" value="{{ request.path }}">
                     <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-up"></i> <span>{{ post.likes.all.count }}</span></button>
                 </form>
+                <p>Total likes: (likes: {{ post.num_likes }})</p>
 
                 <form method="POST" action="{% url 'dislike' %}">
                     {% csrf_token %}
                     <input type="hidden" name="next" value="{{ request.path }}">
                     <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-down"></i> <span>{{ post.dislikes.all.count }}</span></button>
                 </form>
+                <p>Total dislikes: {{ dislikes.all.count }} </p>
             </div>
         </div>
     </div>

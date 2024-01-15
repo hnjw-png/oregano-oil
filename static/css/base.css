@@ -11,9 +11,15 @@ body {
 }
 
 /*button like*/
+.far {
+    width: 200px;
+}
+.fa-thumbs-down {
+    width: 200px;
+}
 
-.btn-like {
-    
+.fa-thumbs-up {
+
 }
 
 /* from Bulma */
