@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% extends "base.html" %}
+{% block content %}
+    <h2 class = 'reserve_title'>{{ testimonial.title}}</h2>
+    <p class = 'register'>Date: {{ testimonial.description }}</p>
+    <p class = 'register'>Description: {{ testimonial.price }}</p>
+    
+    
+    {% if user.is_authenticated %}
+        {% if user == testimonial.organizer %}
+        
+           <a class = 'buttonf' href="{% url 'create_testimonial' %}">Create</a>
+            <a class = 'buttonf' href ="{%url 'update_testimonial' testimonial.id %}">Update</a>
+            <a class = 'buttonf' href ="{%url 'delete_testimonial' testimonial.id  %}">Delete</button></a>
+        {% endif %}
+    {% else %}
+        <p class = 'register' >Please log in to create your own event.</p>
+        <a class = 'buttonf' href ="{%url 'register_testimonial' testimonial.id  %}">Log in</a>
+    {% endif %}
+    {% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+{ block content }
+<p class = "brand-info">Welcome! Please Log in to create, update & delete your own Testimonials. </p>
+<p class = 'register'>Scroll down to see all testimonials.<p>
+<a class = 'create' href="{% url 'create_testimonial' %}">Create Testimonial</a><p class = "brand-info" >View existing testimonials:</p>
+    {% for testimonial in testimonials %}
+        <ul><li class ='reservation'>
+            <a class = 'buttonfunny' href="{% url 'testimonial_detail' testimonial.id %}">{{ testimonial.title }}</a>
+        </li></ul>
+        
+    {% empty %}
+        <ul><li class ="buttonfunny">No testimonials found.</li></ul>
+    {% endfor %}
+
+{% endblock %}
+ 

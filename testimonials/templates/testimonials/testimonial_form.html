@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+{% extends "base.html" %}
+{% block content %}
+    <h2 class = 'new_reservation'>{{ form.instance.title|default:"New Testimonial" }}</h2>
+    <p class = 'reserve_detail'>None detailed Testimonials, will be deleted by admin.</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add/Save</button>
+    </form>
+{% endblock %}
