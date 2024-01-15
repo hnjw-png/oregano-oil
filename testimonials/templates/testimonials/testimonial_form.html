@@ -16,7 +16,7 @@
             <div class="col-12 col-md-6">
                 <hr>
                 <h2 class="logo-font mb-4">{{ form.instance.title|default:"New Testimonials" }}</h2>
-                <h5 class="text-muted">Write you testimoial below, be sure to fill out all fields:</h5>
+                <h5 class="text-muted">Write you testimonial below, be sure to fill out all fields:</h5>
                 <hr>
             </div>
         </div>
@@ -31,9 +31,9 @@
  {% endfor %}
 {% endif %}
         <div class="row">
-            <img src="/media/images/oregano-4338622_1280.jpg" class="rounded float-right" alt="oregano garden stone">
+            <img src="/media/images/oregano-2662890_1280.jpg" class="rounded float-right" alt="oregano garden stone">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'create_testimonial' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
                         {% if field.name != 'image' %}
@@ -44,7 +44,7 @@
                     {% endfor %}
 
                     <div class="text-right">
-                        <button class="btn btn-black rounded-0" type="submit">Send Message</button>
+                        <button class="btn btn-black rounded-0"  type="submit">Submit</button>
                     </div>
                 </form>
             </div>            

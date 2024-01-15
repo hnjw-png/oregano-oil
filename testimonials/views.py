@@ -23,22 +23,22 @@ def create_testimonial(request):
             testimonial = form.save(commit=False)
             testimonial.organizer = request.user
             testimonial.save()
-            return redirect('testimonials/testimonial_detail.html', testimonial_id=testimonial.id)
+            return redirect('testimonial_detail', testimonial_id=testimonial.id)
     else:
         form = TestimonialsForm()
     return render(request, 'testimonials/testimonial_form.html', {'form': form})
 
-@login_required
-def register_testimonial(request, reservation_id):
-    testimonial = get_object_or_404(Testimonial, pk=testimonial_id)
-    return redirect('testimonials/testimonial_detail', testimonial_id=testimonial.id)
+#@login_required
+#def register_testimonial(request, testimonial_id):
+#    testimonial = get_object_or_404(Testimonial, pk=testimonial_id)
+#    return redirect('testimonial_detail', testimonial_id=testimonial.id)
     
 
 @login_required
 def delete_testimonial(request, testimonial_id):
     testimonial = Testimonials.objects.get(pk=testimonial_id)
     testimonial.delete()
-    return redirect('testimonials/testimonials_list.html')
+    return redirect('testimonial_list')
 
 
 @login_required
@@ -47,6 +47,6 @@ def update_testimonial(request, testimonial_id):
     form = TestimonialsForm(request.POST or None, instance=testimonial)
     if form.is_valid():
         form.save()
-        return redirect('testimonials/testimonials_form.html', testimonial_id=testimonial.id)
+        return redirect('testimonial_form', testimonial_id=testimonial.id)
 
-    return render(request, 'testimonials/testimonials_form.html', {'testimonial':testimonial, 'form':form})
+    return render(request, 'testimonials/testimonial_form.html', {'testimonial':testimonial, 'form':form})
