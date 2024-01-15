@@ -9,7 +9,6 @@
     </div>
 {% endblock %}
 
-{% extends "base.html" %}
 {% block content %}
     <h2 class = 'reserve_title'>{{ testimonial.title}}</h2>
     <p class = 'register'>Date: {{ testimonial.description }}</p>
@@ -21,10 +20,10 @@
         
            <a class = 'buttonf' href="{% url 'create_testimonial' %}">Create</a>
             <a class = 'buttonf' href ="{%url 'update_testimonial' testimonial.id %}">Update</a>
-            <a class = 'buttonf' href ="{%url 'delete_testimonial' testimonial.id  %}">Delete</button></a>
+            <a class = 'buttonf' href ="{%url 'delete_testimonial' testimonial.id  %}">Delete</a>
         {% endif %}
     {% else %}
-        <p class = 'register' >Please log in to create your own event.</p>
+        <p class = 'register' >Please log in to create your own testimonial.</p>
         <a class = 'buttonf' href ="{%url 'register_testimonial' testimonial.id  %}">Log in</a>
     {% endif %}
     {% endblock %}

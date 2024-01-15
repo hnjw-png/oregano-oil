@@ -1,11 +1,7 @@
 from django.contrib import admin
+from .models import Testimonials
+admin.site.register
 
-# Register your models here.
-
-class TestimonialsAdmin(admin.ModelAdmin):
-    list_display = (
-        'title',
-        'description',
-        'price',
-        
-    )
+@admin.register(Testimonials)
+class Testimonials(admin.ModelAdmin):
+    list_display = ('title', 'description', 'price')
