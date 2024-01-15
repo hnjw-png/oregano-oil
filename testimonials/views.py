@@ -3,11 +3,9 @@ from django. shortcuts import render, get_object_or_404, redirect
 from django. views import generic
 from datetime import datetime, timedelta
 from django.contrib.auth.decorators import login_required
-from .models import Reservation, Client
-from .forms import ReservationForm
+from .models import Testimonials
+from .forms import TestimonialsForm
 
-#def Reservation(request):
- #   return render(request, 'bookingblog/index.html')
 
 def testimonial_list(request):
     testimonials = Testimonials.objects.all()
@@ -40,3 +38,14 @@ def delete_testimonial(request, testimonial_id):
     testimonial = Testimonial.objects.get(pk=testimonial_id)
     testimonial.delete()
     return redirect('testimonial_list')
+
+
+@login_required
+def update_testimonial(request, testimonial_id):
+    testimonial = Testimonial.objects.get(pk=testimonial_id)
+    form = TestimonialForm(request.POST or None, instance=testimonial)
+    if form.is_valid():
+        form.save()
+        return redirect('testimonial_form', testimonial_id=testimonial.id)
+
+    return render(request, 'testimonial_form.html', {'testimonial':testimonial, 'form':form})
