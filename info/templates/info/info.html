@@ -32,7 +32,7 @@
                     <input type="hidden" name="next" value="{{ request.path }}">
                     <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-up"></i> <span>{{ post.likes.all.count }}</span></button>
                 </form>
-                <p>Total likes: (likes: {{ post.num_likes }})</p>
+                <p>Total likes: (likes: {{ num_likes }})</p>
 
                 <form method="POST" action="{% url 'dislike' %}">
                     {% csrf_token %}
