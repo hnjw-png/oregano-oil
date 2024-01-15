@@ -11,8 +11,8 @@
 
 {% block content %}
     <h2 class = 'reserve_title'>{{ testimonial.title}}</h2>
-    <p class = 'register'>Date: {{ testimonial.description }}</p>
-    <p class = 'register'>Description: {{ testimonial.price }}</p>
+    <p class = 'register'>Description: {{ testimonial.description }}</p>
+    <p class = 'register'>Price: {{ testimonial.price }}</p>
     
     
     {% if user.is_authenticated %}

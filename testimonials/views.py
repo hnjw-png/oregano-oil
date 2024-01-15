@@ -21,6 +21,7 @@ def create_testimonial(request):
         form = TestimonialsForm(request.POST)
         if form.is_valid():
             testimonial = form.save(commit=False)
+            testimonial.organizer = request.user
             testimonial.save()
             return redirect('testimonials/testimonial_detail.html', testimonial_id=testimonial.id)
     else:
@@ -37,7 +38,7 @@ def register_testimonial(request, reservation_id):
 def delete_testimonial(request, testimonial_id):
     testimonial = Testimonial.objects.get(pk=testimonial_id)
     testimonial.delete()
-    return redirect('testimonials/testimonial_list')
+    return redirect('testimonials/testimonial_list.html')
 
 
 @login_required
@@ -46,6 +47,6 @@ def update_testimonial(request, testimonial_id):
     form = TestimonialsForm(request.POST or None, instance=testimonial)
     if form.is_valid():
         form.save()
-        return redirect('testimonials/testimonial_form', testimonial_id=testimonial.id)
+        return redirect('testimonials/testimonial_form.html', testimonial_id=testimonial.id)
 
     return render(request, 'testimonials/testimonial_form.html', {'testimonial':testimonial, 'form':form})
