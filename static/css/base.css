@@ -22,6 +22,22 @@ body {
 
 }
 
+.editbuttons {
+    width:200px;
+    color:#28a745
+}
+
+/*label*/
+label {
+    color:white
+}
+
+/*images*/
+.float-right {
+    float: right;
+    max-width: 35%;
+    border-left: 20%;
+}
 /* from Bulma */
 .icon {
     align-items: center;

@@ -8,22 +8,21 @@
         </div>
     </div>
 {% endblock %}
-
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="logo-font mb-4">Contact us!</h2>
+            <h5 class="text-muted">Write message below, be sure to fill out all fields:</h5>
+            <hr>
+        </div>
+    </div>
 {% block content %}
     <h2 class = 'reserve_title'>{{ testimonial.title}}</h2>
     <p class = 'register'>Description: {{ testimonial.description }}</p>
     <p class = 'register'>Price: {{ testimonial.price }}</p>
-    
-    
-    {% if user.is_authenticated %}
-        {% if user == testimonial.organizer %}
-        
-           <a class = 'buttonf' href="{% url 'create_testimonial' %}">Create</a>
-            <a class = 'buttonf' href ="{%url 'update_testimonial' testimonial.id %}">Update</a>
-            <a class = 'buttonf' href ="{%url 'delete_testimonial' testimonial.id  %}">Delete</a>
-        {% endif %}
-    {% else %}
-        <p class = 'register' >Please log in to create your own testimonial.</p>
-        <a class = 'buttonf' href ="{%url 'register_testimonial' testimonial.id  %}">Log in</a>
-    {% endif %}
+            <a class = 'editbuttons' href="{% url 'create_testimonial' %}">Create</a>
+            <a class = 'editbuttons' href ="{%url 'update_testimonial' testimonial.id %}">Update</a>
+            <a class = 'editbuttons' href ="{%url 'delete_testimonial' testimonial.id %}">Delete</a>
     {% endblock %}

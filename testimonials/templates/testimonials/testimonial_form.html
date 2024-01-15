@@ -8,13 +8,36 @@
         </div>
     </div>
 {% endblock %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="logo-font mb-4">Contact us!</h2>
+            <h5 class="text-muted">Write message below, be sure to fill out all fields:</h5>
+            <hr>
+        </div>
+    </div>
 
-{% block content %}
-    <h2 class = 'new_reservation'>{{ form.instance.title|default:"New Testimonial" }}</h2>
-    <p class = 'reserve_detail'>None detailed Testimonials, will be deleted by admin.</p>
+    <div class="overlay"></div>
+    {% block content %}
+<div class="row">
+    <div class="col-12 col-md-6">
+        <hr>
+        <h2 class="logo-font mb-4">{{ form.instance.title|default:"New Testimonials" }}</h2>
+        <h5 class="text-muted">None detailed Testimonials, will be deleted by admin.</h5>
+        <hr>
+    </div>
+</div>
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
+        {% for field in form %}
+            {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+            {% else %}
+                {{ field }}
+            {% endif %}
+        {% endfor %}
         <button type="submit">Add/Save</button>
     </form>
 {% endblock %}

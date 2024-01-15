@@ -36,17 +36,17 @@ def register_testimonial(request, reservation_id):
 
 @login_required
 def delete_testimonial(request, testimonial_id):
-    testimonial = Testimonial.objects.get(pk=testimonial_id)
+    testimonial = Testimonials.objects.get(pk=testimonial_id)
     testimonial.delete()
-    return redirect('testimonials/testimonial_list.html')
+    return redirect('testimonials/testimonials_list.html')
 
 
 @login_required
 def update_testimonial(request, testimonial_id):
-    testimonial = Testimonial.objects.get(pk=testimonial_id)
+    testimonial = Testimonials.objects.get(pk=testimonial_id)
     form = TestimonialsForm(request.POST or None, instance=testimonial)
     if form.is_valid():
         form.save()
-        return redirect('testimonials/testimonial_form.html', testimonial_id=testimonial.id)
+        return redirect('testimonials/testimonials_form.html', testimonial_id=testimonial.id)
 
-    return render(request, 'testimonials/testimonial_form.html', {'testimonial':testimonial, 'form':form})
+    return render(request, 'testimonials/testimonials_form.html', {'testimonial':testimonial, 'form':form})
