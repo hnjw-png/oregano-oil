@@ -8,6 +8,10 @@ class LikeModel(models.Model):
     likes = models.ManyToManyField(User, related_name='like')
     dislikes = models.ManyToManyField(User, blank=True, related_name='dislikes')
 
-def number_of_likes(self):
-        return self.likes.count()
+#def number_of_likes(self):
+#       return self.likes.count()
+
+@property
+def interaction_count(self):
+    return self.likes.count() + self.dislikes.count()
 
