@@ -11,6 +11,7 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
+    <img src = "/media/images/herbs-2126283_1920.jpg"   class ="rounded float-right" alt="butterfly on oregano">
     <div class="row">
         <div class="col-12 col-md-6">
             <hr>
@@ -18,8 +19,9 @@
             <h5 class="text-muted">Scroll down to see all testimonials.</h5>
             <hr>
         </div>
+
     </div>
-<a class = 'editbuttons' href="{% url 'create_testimonial' %}">Create Testimonial</a><p class = "text-muted" >View existing testimonials:</p>
+<a class = "btn btn-black rounded-0" ' href="{% url 'create_testimonial' %}">Create Testimonial</a><p class = "text-muted" >View existing testimonials:</p>
     {% for testimonial in testimonials %}
         <ul><li class ='reservation'>
             <a class = 'text-muted' href="{% url 'testimonial_detail' testimonial.id %}">{{ testimonial.title }}</a>
