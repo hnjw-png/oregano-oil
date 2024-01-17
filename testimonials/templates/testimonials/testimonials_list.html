@@ -8,6 +8,7 @@
         </div>
     </div>
 {% endblock %}
+{% block content %}
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
@@ -22,29 +23,7 @@
             <p> </p>
             <p>  </p>
             <p></p>
-        </div>
-        <img src="/media/images/oregano-7317396_1280.jpg" class="rounded float-right" alt="butterfly on oregano">
-    </div>
-    
-{% block content %}
-<div class="overlay"></div>
-<div class="container">
-    <img src = "/media/images/herbs-2126283_1920.jpg"   class ="rounded float-right" alt="butterfly on oregano">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <hr>
-            <h2 class="logo-font mb-4">Testimonials!</h2>
-            <h5 class="text-muted">Please Log in to create, update & delete your own Testimonials.
-                Scroll down to see all testimonials.</h5>
-            <hr>
-        </div>
-        <p>This is a place in the website where we can share our views on the products. We write truthful and informative
-            testimonials. The testimonials are 
-            
-        </p>
-
-    </div>
-<a class = "btn btn-black rounded-0" ' href="{% url 'create_testimonial' %}">Create Testimonial</a><p class = "text-muted" >View existing testimonials:</p>
+            <a class = "btn btn-black rounded-0" ' href="{% url 'create_testimonial' %}">Create Testimonial</a><p class = "text-muted" >View existing testimonials:</p>
     {% for testimonial in testimonials %}
         <ul><li class ='reservation'>
             <a class = 'logo-font mb-4' href="{% url 'testimonial_detail' testimonial.id %}">{{ testimonial.title }}</a>
@@ -53,6 +32,10 @@
     {% empty %}
         <ul><li class ="buttonfunny">No testimonials found.</li></ul>
     {% endfor %}
+
+        </div>
+        <img src="/media/images/oregano-7317396_1280.jpg" class="rounded float-right" alt="butterfly on oregano">
+    </div>
 
 {% endblock %}
  

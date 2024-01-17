@@ -32,16 +32,16 @@
                 <form method="POST" action="{% url 'addlike' %}">
                     {% csrf_token %}
                     <input type="hidden" name="next" value="{{ request.path }}">
-                    <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-up"></i> <span>{{ post.likes.all.count }}</span></button>
+                    <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-up"></i> <span>{{ Info.likes.all.count }}</span></button>
                 </form>
-                <p>Total likes: (likes: {{ num_likes }})</p>
+                <p>Total likes: {{ number_of_Likes }}</p>
 
                 <form method="POST" action="{% url 'dislike' %}">
                     {% csrf_token %}
                     <input type="hidden" name="next" value="{{ request.path }}">
-                    <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-down"></i> <span>{{ post.dislikes.all.count }}</span></button>
+                    <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-down"></i> <span>{{ Info.dislikes.all.count }}</span></button>
                 </form>
-                <p>Total dislikes: {{ dislikes.all.count }} </p>
+                <p>Total dislikes: {{ number_of_dislikes }} </p>
             </div>
         </div>
     </div>

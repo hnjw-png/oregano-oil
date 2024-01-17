@@ -5,15 +5,16 @@ from django.contrib.auth.models import User
 
 class LikeModel(models.Model):
     created = models.DateTimeField(auto_now_add=True)
-    likes = models.ManyToManyField(User, related_name='like')
+    likes = models.ManyToManyField(User, related_name='likes')
     dislikes = models.ManyToManyField(User, blank=True, related_name='dislikes')
 
-    #def number_of_likes(self):
-    #     return self.likes.count()
-     #     return self.dislikes.count()
 
+    @property
+    def total_likes(self):
+        return self.likes.count()
     
     @property
-    def interaction_count(self):
-        return self.likes.count() + self.dislikes.count()
-
+    def total_dislikes(self):
+        return self.likes.count()
+    
+   
