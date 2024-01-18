@@ -26,12 +26,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = '-)zf*#mn8=c&ij-9=our3c$42^j-ctc03pt)8@1*l(6p5qb&q)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-hnjwpng-oreganooil-vyarixu94re.ws-eu107.gitpod.io' , 'oreganooil1-2ce75722cde3.herokuapp.com']
+ALLOWED_HOSTS = ['8000-hnjwpng-oreganooil-yt1g8b2hwt7.ws-eu107.gitpod.io' , 'oreganooil1-2ce75722cde3.herokuapp.com']
 
 # Application definition
 
@@ -195,8 +195,8 @@ MEDIA_URL = '/media/'
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_live_51OJhqJLogXhlP9sbCzvMYE27riTAX4z22A2uWAMP2CMmItmireCEkPQ7pfWVXdysYYrsgRYOmGUQPQNkF2sFTzQ200M2dep9h8')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51OJhqJLogXhlP9sbrR9mhpu063uSowgIwTMNeHxCxdtJjKbNFsIHm3mNP3kSIeM0Wl4vhcYSpHgGrFxDSjCQvxFz00sMLYdmRB')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
