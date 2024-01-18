@@ -133,8 +133,8 @@ def checkout(request):
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
-        'stripe_public_key': 'pk_live_51OJhqJLogXhlP9sbCzvMYE27riTAX4z22A2uWAMP2CMmItmireCEkPQ7pfWVXdysYYrsgRYOmGUQPQNkF2sFTzQ200M2dep9h8',
-        'client_secret': intent.client_secret,
+        'stripe_public_key': 'pk_test_51OJhqJLogXhlP9sbnpwB86rT4HC6zEoZqN0rUnFAXHywYb73w99dERzSfK2OtItZnlkT9SHyEyHD5Sg5l75KMopR00f7ugPDFk',
+        'client_secret': 'test client secret',
     }
 
     return render(request, template, context)
