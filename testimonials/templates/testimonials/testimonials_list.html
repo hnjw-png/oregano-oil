@@ -23,10 +23,21 @@
             <p> </p>
             <p>  </p>
             <p></p>
-            <a class = "btn btn-black rounded-0" ' href="{% url 'create_testimonial' %}">Create Testimonial</a><p class = "text-muted" >View existing testimonials:</p>
+            <a class = "btn btn-black rounded-0" ' href="{% url 'create_testimonial' %}">Create Testimonial</a>
     {% for testimonial in testimonials %}
-        <ul><li class ='reservation'>
-            <a class = 'logo-font mb-4' href="{% url 'testimonial_detail' testimonial.id %}">{{ testimonial.title }}</a>
+            <div class="card">
+                <div class="card-header">
+                  List of Testimonials
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <ul class ='list-unstyled'><li></li>
+                    <a class = 'logo-font mb-4' href="{% url 'testimonial_detail' testimonial.id %}">{{ testimonial.title }}</a>
+                </li></ul>
+                  </blockquote>
+                </div>
+              </div>
+            
         </li></ul>
         
     {% empty %}
