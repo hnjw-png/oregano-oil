@@ -7,37 +7,38 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def Info(request):
-    instance = LikeModel.objects.all().first()
-    return render(request, 'info/info.html')
+    return render(request, 'info/info.html', context)
 
 @login_required
 def AddLike(request, *args, **kwargs):
     instance = LikeModel.objects.all().first()
     
-    if instance == None:
-        instance = LikeModel.objects.create()
-        instance.save()
-        
-    if instance.likes.all().filter(id=request.user.id).exists():
-        instance.dislikes.remove(request.user.id)
-    else:
-        instance.likes.add(request.user.id)
-        
-    return render(request, 'info/info.html')
+    if request.method == "POST":
+        if instance == None:
+            instance = LikeModel.objects.create()
+            instance.save()
+            
+        if instance.likes.all().filter(id=request.user.id).exists():
+            instance.dislikes.remove(request.user.id)
+        else:
+            instance.likes.add(request.user.id)
+
+    return render(request, 'info/info.html', {"instance": instance})
 
             
 @login_required
 def AddDislike(request, *args, **kwargs):
     instance = LikeModel.objects.all().first()
     
-    if instance == None:
-        instance = LikeModel.objects.create()
-        instance.save()
+    if request.method == "POST":
+        if instance == None:
+            instance = LikeModel.objects.create()
+            instance.save()
+            
+        if instance.dislikes.all().filter(id=request.user.id).exists():
+            instance.likes.remove(request.user.id)
+        else:
+            instance.dislikes.add(request.user.id)
         
-    if instance.dislikes.all().filter(id=request.user.id).exists():
-        instance.likes.remove(request.user.id)
-    else:
-        instance.dislikes.add(request.user.id)
-        
-    return render(request, 'info/info.html')
+    return render(request, 'info/info.html', {"instance": instance})
 
