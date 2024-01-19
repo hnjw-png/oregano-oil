@@ -31,20 +31,10 @@
             <div class="d-flex flex-row">
                 <form method="POST" action="{% url 'addlike' %}">
                     {% csrf_token %}
-                    <input type="hidden" name="next" value="{{ request.path }}">
-                    <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-up"></i> <span>{{ Info.likes.all.count }}</span></button>
-                </form>
-                <p>Total likes: {{ total_of_Likes }}</p>
 
-                <form method="POST" action="{% url 'dislike' %}">
-                    {% csrf_token %}
-                    <input type="hidden" name="next" value="{{ request.path }}">
-                    <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-down"></i> <span>{{ Info.dislikes.all.count }}</span></button>
+                    <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-up"></i> <span>{{ likes.all.count }}</span></button>
                 </form>
-                <p>Total dislikes: {{ total_dislikes }} </p>
-            </div>
-        </div>
-    </div>
+                <p>Total likes: {{ total }}</p>
          </strong>
      </div>
  {% endblock %}
