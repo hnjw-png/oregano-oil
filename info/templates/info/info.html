@@ -29,7 +29,7 @@
         
         <strong>
             <div class="d-flex flex-row">
-                <form method="POST" action="{% url 'addlike' %}">
+                <form method="POST" action="{% url 'likes' %}">
                     {% csrf_token %}
 
                     <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-up"></i> <span>{{ likes.all.count }}</span></button>
@@ -37,4 +37,14 @@
                 <p>Total likes: {{ total }}</p>
          </strong>
      </div>
+     <strong>
+        <div class="d-flex flex-row">
+            <form method="POST" action="{% url 'dislikes' %}">
+                {% csrf_token %}
+
+                <button style="background-color: transparent; border: none; box-shadow: none;" type="submit"><i class="far fa-thumbs-up"></i> <span>{{ likes.all.count }}</span></button>
+            </form>
+            <p>Total dislikes: {{ total }}</p>
+     </strong>
+ </div>
  {% endblock %}

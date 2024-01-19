@@ -18,12 +18,25 @@ def AddLike(request, *args, **kwargs):
         instance.save()
         
     if instance.likes.all().filter(id=request.user.id).exists():
-        instance.likes.remove(request.user.id)
+        instance.dislikes.remove(request.user.id)
     else:
         instance.likes.add(request.user.id)
         
     return render(request, 'info/info.html')
 
             
-
+@login_required
+def AddDislike(request, *args, **kwargs):
+    instance = LikeModel.objects.all().first()
+    
+    if instance == None:
+        instance = LikeModel.objects.create()
+        instance.save()
+        
+    if instance.dislikes.all().filter(id=request.user.id).exists():
+        instance.likes.remove(request.user.id)
+    else:
+        instance.dislikes.add(request.user.id)
+        
+    return render(request, 'info/info.html')
 
