@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def Info(request):
-    return render(request, 'info/info.html', context)
+    return render(request, 'info/info.html')
 
 @login_required
 def AddLike(request, *args, **kwargs):
