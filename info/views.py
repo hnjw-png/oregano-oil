@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def Info(request):
+    instance = LikeModel.objects.all().first()
     return render(request, 'info/info.html')
 
 @login_required
