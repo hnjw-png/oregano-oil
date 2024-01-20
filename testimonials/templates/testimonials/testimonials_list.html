@@ -23,7 +23,7 @@
             <p> </p>
             <p>  </p>
             <p></p>
-            <a class = "btn btn-black rounded-0" ' href="{% url 'create_testimonial' %}">Create Testimonial</a>
+            <a class = "btn btn-black rounded-0" href="{% url 'create_testimonial' %}">Create Testimonial</a>
     {% for testimonial in testimonials %}
             <div class="card">
                 <div class="card-header">
@@ -41,12 +41,13 @@
         </li></ul>
         
     {% empty %}
-        <ul><li class ="buttonfunny">No testimonials found.</li></ul>
+        <ul><li class ="text-muted">No testimonials found.</li></ul>
     {% endfor %}
 
         </div>
-        <img src="/media/images/oregano-7317396_1280.jpg" class="rounded float-right" alt="butterfly on oregano">
+        <img src="{% static '/images/family-5227815_1280_Nn7VSrg.jpg' %}" class="rounded float-right" alt="butterfly on oregano">
     </div>
+
 
 {% endblock %}
  
