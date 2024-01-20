@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '-)zf*#mn8=c&ij-9=our3c$42^j-ctc03pt)8@1*l(6p5qb&q)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-hnjwpng-oreganooil-yt1g8b2hwt7.ws-eu107.gitpod.io' , 'oreganooil1-2ce75722cde3.herokuapp.com']
 

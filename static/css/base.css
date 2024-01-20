@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url(https://console.cloudinary.com/console/c-c1ca62374a3ebe088440327b759bf5/media_library/folders/c693eacc2389576463395362fdb7ecc029/asset/fc6594a6d3db8d5595b000cf9ea3564e/manage?view_mode=mosaic&context=manage) no-repeat center center fixed;
+    background: url('https://res.cloudinary.com/dul4q5fmz/image/upload/v1705770344/static/images/oregano-2662890_1280.8cbe19c417ca.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
