@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    background: url('https://res.cloudinary.com/dul4q5fmz/image/upload/v1705770344/static/images/oregano-2662890_1280.8cbe19c417ca.jpg') no-repeat center center fixed;
+    /* background: url('https://res.cloudinary.com/dul4q5fmz/image/upload/v1705770344/static/images/oregano-2662890_1280.8cbe19c417ca.jpg') no-repeat center center fixed; */
+    background-image: url('https://res.cloudinary.com/dul4q5fmz/image/upload/v1705770344/static/images/oregano-2662890_1280.8cbe19c417ca.jpg') ;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
