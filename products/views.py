@@ -3,6 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.http import HttpResponse
+
 
 from .models import Product
 from .forms import ProductForm
@@ -113,3 +115,21 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+''' rating the products '''
+
+def rate(request: HttpResponse) -> HttpResponse:
+     obj = Rating.objects.filter(score=0).order_by("?").first()
+     context ={
+         'object':obj
+     }
+     return render(request, 'products/products.html', context)
+ 
+def rate_product(request):
+    if request.method == "POST":
+        val = request.POST.get('el_id')
+        obj = request.POST.get('val')
+        obj = Rating.objects(id=el_id)
+        obj.score = val
+        obj.save()
+        return JsonResponse({'success' : 'true', 'score' : val}, safe=False)

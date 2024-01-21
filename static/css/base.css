@@ -19,8 +19,10 @@ body {
     width: 200px;
 }
 
-.fa-thumbs-up {
+/* star rating */
 
+.checked {
+    color:#21D192
 }
 .editbuttons {
     width:200px;

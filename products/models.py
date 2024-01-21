@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
@@ -15,4 +16,17 @@ class Product(models.Model):
     def _str_(self):
         return self.name
 
-        
+
+
+class rate(models.Model):
+    #User = models.ForeignKey(User, on_delete=models.CASCADE)
+    score = models.IntegerField(default=0,
+        validators = [
+            MaxValueValidator(5),
+            MinValueValidator(0)
+        ]
+    )
+   
+    def __str__(self):
+        return str(self)
+              
