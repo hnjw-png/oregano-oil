@@ -9,6 +9,8 @@ const five = document.getElementById('fifth')
 
 const form = document.querySelector('rate-form')
 
+// Listen for click event //
+
 const handleStarSelect = (size) => {
     const children = form.children
     for(let i=0; i < children.length; i++) {
@@ -19,6 +21,8 @@ const handleStarSelect = (size) => {
     }
   } 
 }
+
+// how many stars should chnage colour.. example 5 star rating would be 5 stars. //
 
 const handleSelect = (selection) =>{
     switch(selection){

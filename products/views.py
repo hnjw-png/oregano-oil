@@ -127,9 +127,9 @@ def rate(request: HttpResponse) -> HttpResponse:
  
 def rate_product(request):
     if request.method == "POST":
-        val = request.POST.get('el_id')
+        value = request.POST.get('el_id')
         obj = request.POST.get('val')
         obj = Rating.objects(id=el_id)
-        obj.score = val
+        obj.score = value
         obj.save()
-        return JsonResponse({'success' : 'true', 'score' : val}, safe=False)
+        return JsonResponse({'success' : 'true', 'score' : value}, safe=False)
