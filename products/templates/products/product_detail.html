@@ -47,7 +47,7 @@
                     <button type = 'submit' class ='fa fa-star fa-3x checked' id = 'fifth'></button>
                 </form>
                 </div>
-                <div id ='confirm_box'></div>
+                <div id ='confirm-box'></div>
 
                 <p class="mt-3">{{ product.description }}</p>
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
@@ -97,4 +97,6 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
+<script src="{% static 'js/script.js' %}"></script>
+
 {% endblock %}

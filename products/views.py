@@ -125,10 +125,13 @@ def rate(request: HttpResponse) -> HttpResponse:
      }
      return render(request, 'products/products.html', context)
  
+ 
+""" give rating value """ 
+ 
 def rate_product(request):
     if request.method == "POST":
         value = request.POST.get('el_id')
-        obj = request.POST.get('val')
+        obj = request.POST.get('value')
         obj = Rating.objects(id=el_id)
         obj.score = value
         obj.save()

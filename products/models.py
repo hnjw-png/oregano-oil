@@ -19,7 +19,7 @@ class Product(models.Model):
 
 
 class rate(models.Model):
-    #User = models.ForeignKey(User, on_delete=models.CASCADE)
+    #user = models.ForeignKey(user, on_delete=models.CASCADE)
     score = models.IntegerField(default=0,
         validators = [
             MaxValueValidator(5),
@@ -28,5 +28,5 @@ class rate(models.Model):
     )
    
     def __str__(self):
-        return str(self)
+        return self.score
               

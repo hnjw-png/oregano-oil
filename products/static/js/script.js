@@ -1,4 +1,5 @@
 
+console.log('test')
 // get the stars //
 
 const one = document.getElementById('first')
@@ -8,8 +9,10 @@ const four = document.getElementById('fourth')
 const five = document.getElementById('fifth')
 
 const form = document.querySelector('rate-form')
+const confirmBox = document.getElementById('confirm-box')
 
-// Listen for click event //
+const csrf = document.getElementById('csrfmiddlewaretoken')
+// functions for event //
 
 const handleStarSelect = (size) => {
     const children = form.children
@@ -22,7 +25,7 @@ const handleStarSelect = (size) => {
   } 
 }
 
-// how many stars should chnage colour.. example 5 star rating would be 5 stars. //
+// how many stars should change colour.. example 5 star rating would be 5 stars. //
 
 const handleSelect = (selection) =>{
     switch(selection){
@@ -53,3 +56,64 @@ const handleSelect = (selection) =>{
     }
 }
 
+// get number of the star //
+
+const getNumericValue = (stringValue) =>{
+    let number;
+    if (stringValue === 'first') {
+        number = 1 
+    }
+    else if(stringValue === 'second')  {
+        number = 2;
+    }
+    else if(stringValue === 'third')  {
+        number = 3;
+    }
+    
+    else if(stringValue === 'fourth')  {
+        number = 4;
+    }
+    else if(stringValue === 'fifth')  {
+        number = 5;
+    }
+    return number
+
+}
+
+if(one) {
+    const stars = [one, two, three, four, five]
+
+stars.forEach(item=> item.addEventListener('mouseover', (event)=>{handleSelect(event.target.id)}))
+
+stars.forEach(item=> item.addEventListener('click'), (event)=>{
+    const value = event.target.id
+    console.log(value)
+
+    form.addEventListener('submit', e=>{
+        e.preventDefault()
+        const id = e.target.id
+        console.log(id)
+        const value_number = getNumericValue
+
+        s.ajax({
+            type: 'POST',
+            url: '/rate/',
+            data: {
+                'csrfmiddlewaretoken' : csrf[0].value,
+                'el_id': id,
+                'value' : value_number
+            },
+            success: function(response){
+                console.log(response)
+                confirmBox.innerHTML = '<h1>You Rated a Product</h1>'
+            },
+            error: function(error){
+                console.log(error)
+                confirmBox.innerHTML = '<h1>Oh no, looks like something did not work correctly</h1>'
+            }
+        })
+    })
+
+})
+
+}
