@@ -23,6 +23,7 @@ def AddLike(request, *args, **kwargs):
             instance.dislikes.remove(request.user.id)
         else:
             instance.likes.add(request.user.id)
+            instance.save()
 
     return render(request, 'info/info.html', {"instance": instance})
 
@@ -40,6 +41,7 @@ def AddDislike(request, *args, **kwargs):
             instance.likes.remove(request.user.id)
         else:
             instance.dislikes.add(request.user.id)
+            instance.save()
         
     return render(request, 'info/info.html', {"instance": instance})
 

@@ -14,9 +14,12 @@ class LikeModel(models.Model):
         total_likes_received = likes.objects.filter.count()
         return self.total_likes_received.count()
     
+    
+    
     @property
     def total_dislikes_received(self):
         total_dislikes_received = dislikes.objects.filter.count()
         return self.total_dislikes_received.count()
+    
     
    
