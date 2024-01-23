@@ -24,6 +24,14 @@ body {
 .checked {
     color:#21D192
 }
+
+m.ybutton {
+
+    background-color: inherit !important;
+
+
+
+}
 .editbuttons {
     width:200px;
     color:#28a745

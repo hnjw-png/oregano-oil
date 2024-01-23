@@ -28,5 +28,5 @@ class rate(models.Model):
     )
    
     def __str__(self):
-        return self.score
+        return str(self.pk)
               
