@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Oregano Oil Shop Confirmation for Order Number {{ order.order_number }}
