@@ -116,23 +116,3 @@ def delete_product(request, product_id):
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
 
-''' rating the products '''
-
-def rate(request: HttpResponse) -> HttpResponse:
-     obj = Rating.objects.filter(score=0).order_by("?").first()
-     context ={
-         'object':obj
-     }
-     return render(request, 'products/products.html', context)
- 
- 
-""" give rating value """ 
- 
-def rate_product(request):
-    if request.method == "POST":
-        value = request.POST.get('el_id')
-        obj = request.POST.get('value')
-        obj = Rating.objects(id=el_id)
-        obj.score = value
-        obj.save()
-        return JsonResponse({'success' : 'true', 'score' : value}, safe=False)

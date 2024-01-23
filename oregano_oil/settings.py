@@ -60,7 +60,6 @@ INSTALLED_APPS = [
 
     # Other
     'crispy_forms',
-    'django_ajax',
     # 'storages',
 ]
 

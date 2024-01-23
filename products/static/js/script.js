@@ -26,9 +26,6 @@ const handleStarSelect = (size) => {
 
 // Event listeners for stars
 const stars = [one, two, three, four, five];
-stars.forEach(item => item.addEventListener('mouseover', (event) => {
-    handleSelect(event.target.id);
-}));
 
 stars.forEach(item => item.addEventListener('click', (event) => {
     handleSelect(event.target.id);
@@ -38,25 +35,9 @@ stars.forEach(item => item.addEventListener('click', (event) => {
 form.addEventListener('submit', e => {
     e.preventDefault();
     const id = e.target.id;
-    const value_number = getNumericValue(id);
+    const value_number = getNumericValue;
 
-    $.ajax({
-        type: 'POST',
-        url: '/ rate/',
-        data: {
-            'csrfmiddlewaretoken': csrf.value,
-            'el_id': id,
-            'value': value_number
-        },
-        success: function (response) {
-            console.log(response);
-            confirmBox.innerHTML = '<h1>You Rated a Product</h1>';
-        },
-        error: function (error) {
-            console.log(error);
-            confirmBox.innerHTML = '<h1>Oh no, looks like something did not work correctly</h1>';
-        }
-    });
+
 });
 
 
@@ -65,27 +46,26 @@ form.addEventListener('submit', e => {
 const handleSelect = (selection) =>{
     switch(selection){
         case 'first' : {
-            handleStarSelect(1)
+            handleStarSelect(2)
             return
-        
         }
 
         case 'second' : {
-            handleStarSelect(2)
+            handleStarSelect(3)
             return
     }
         case 'third' : {
-            handleStarSelect(3)
-            return
-        }
-
-        case 'fourth' : {
             handleStarSelect(4)
             return
         }
 
-        case 'fifth' : {
+        case 'fourth' : {
             handleStarSelect(5)
+            return
+        }
+
+        case 'fifth' : {
+            handleStarSelect(6)
             return
         }
     }

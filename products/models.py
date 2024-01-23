@@ -18,15 +18,4 @@ class Product(models.Model):
 
 
 
-class rate(models.Model):
-    #user = models.ForeignKey(user, on_delete=models.CASCADE)
-    score = models.IntegerField(default=0,
-        validators = [
-            MaxValueValidator(5),
-            MinValueValidator(0)
-        ]
-    )
-   
-    def __str__(self):
-        return str(self.pk)
-              
+
