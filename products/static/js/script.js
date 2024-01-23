@@ -15,7 +15,7 @@ const csrf = document.getElementById('csrfmiddlewaretoken')
 // functions for event //
 
 const handleStarSelect = (size) => {
-    const children = form.children
+    const children = form.children;
     for(let i=0; i < children.length; i++) {
         if(i<= size) {
             children[i].classList.add('checked')   
@@ -85,7 +85,7 @@ if(one) {
 
 stars.forEach(item=> item.addEventListener('mouseover', (event)=>{handleSelect(event.target.id)}))
 
-stars.forEach(item=> item.addEventListener('click'), (event)=>{
+stars.forEach(item=> item.addEventListener('click', (event)=>{
     const value = event.target.id
     console.log(value)
 
@@ -114,6 +114,6 @@ stars.forEach(item=> item.addEventListener('click'), (event)=>{
         })
     })
 
-})
+}))
 
 }

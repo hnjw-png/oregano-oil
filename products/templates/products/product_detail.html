@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery .min.js"></script>
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -40,7 +42,7 @@
                 <div>
                     <form class ='rate-form' action="" method="POST" id = {{object.id}}>
                         {% csrf_token %}
-                    <button type = 'submit' class='fa fa-star fa-3x checked' id ='first'></button>
+                    <button type = 'submit' class='fa fa-star fa-3x checked'  id = 'first'></button>
                     <button type = 'submit'  class='fa fa-star fa-3x checked' id ='second'></button>
                     <button type ='submit' class='fa fa-star fa-3x checked' id = 'third'></button>
                     <button type = 'submit' class='fa fa-star fa-3x checked' id = 'fourth'></button>
