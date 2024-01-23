@@ -42,7 +42,7 @@ form.addEventListener('submit', e => {
 
     $.ajax({
         type: 'POST',
-        url: '/rate/',
+        url: '/ rate/',
         data: {
             'csrfmiddlewaretoken': csrf.value,
             'el_id': id,
