@@ -13,6 +13,58 @@ Primarily being a site to purchase oregano oil and ajoining products, the user l
 
 Other attribrutes to the site include a useful admin page, where the super user can easily navigate and add/edit or delete products.As well as a  product management page on the website, which allows the allowed users to add a product.
 
+# Business Plan
+
+* The intention of this e-commerence site is to generate sales for the oregano oil and ajoining products.
+
+* Some things had to be thought out before designing the site, the first is the use of keywords and useful words inside the website. With the intention of improving sales with web optimization, by using certain more popular words inside your website can generate users.
+
+* Here is a list of some key words that were useful and less useful for the website. (with use of the worktraceker.com.)
+
+  1. oregano
+  2. health
+  3. benefits
+  4. near me
+  5. oregano oil
+  6. health products
+
+  ![Skärmbild (179)](https://github.com/hnjw-png/oregano-oil/assets/120515252/f5b59ecc-4552-41f3-8092-762f05308c3c)
+
+* A robots.txt and sitemaps.xml was added to make the site more truthworthy to the browser, and therefore more likely to appear higher in the search engine.
+
+* The site uses using interactivity to make it more than just a shop, its a place where you can leave your own testimonial, and read others. A place to find out information about oregano oil and even be redirected to a official informational website for more information.
+
+* As a store owner its easy to keep track on all site activity by logging in to the admin panel. This panel gives the administator oppurtunity to add whatever they like to the site. As well at the power to remove or add users. Add or delete testomonials, keep track of orders and add products..amoung a few other features.
+
+* A store owner is given a product management page on the site, where he/she can freely add new products. This is a place only the admin can see and use. The procuts are automatically added to the database and to the webpage.
+
+* The site provides the option for the shopper to open a profile and save there order and address information. This is a way to make it easier for the customer to come back and buy whatevers in his/her bag.  Without needing to add it again, which promotes sales. 
+
+* The website has a secure way to make payments through stripe, this is a secure way customers can pay and order a product. Being connected to a payment platform, makes it much payment process much smoother.
+
+* Once the product has been ordered the store owner will be able to see the order in the admin page.
+
+* Confirmation emails are intended to be used for confirmed orders.
+
+* A user must verify their email to sign up for a users account, this to keep the site secure and check these users are humans. Anyone can register for a account. for a employee for example; to be added to admin, the admin must do use in the admin panel.
+
+* The customer can toggle how many of each product they want on the product details page and on the bag. The ability to remove a item exists within the shopping bag. This functionality makes the shopping process smooth, and there raises likelihood of sales.
+
+* The user can use on CRUD on the site, they can add, edit or remove their own testimonials. Unregistered users will be redirected to log to be able to perform CRUD to testimonials, but can view published ones. This keeps the user on the site longer and raises the likelihood of a purchase, through screen time on the website.
+
+* The admin can delete any testimonial he/she wishes through the admin panel, this is to maintain quality for the site. That only informative and 'beyond the doubt to be true' testionials will be able to stay. This will be stated on the site for the user to see.
+
+* The logged in user can LIKE the info page,or take back their LIKE. Whilst a user who is not registered cannot like it and will be prompted to sign up or log in. The user can see they liked the post by 1 like appearing and can remove there like and see it go down to 0.
+
+* The likes are registered in the sql database, this can be used as a tool for the store owner so they can keep a even better check on website activity and interest. You can also sees if a user has likes the post on the admin, is go and click on the user.
+
+* A contact form, that is intended to be send directly to the store owners email. The contact form is important so that users can really feel connected the to site, that they can comminicate with a customer service and ask any questions they need. Which is important for purchases and especially for health products.
+
+* A inclusion of a info page is important to give the iser a really good idea of what they are buying.
+
+* The footer, includes a link to a bespoke facebook webpage for the Oregano Oil Shop. The facebook page keep shoppers connected the shop and all its news and updates, which is turn ca generate sales, due to extra engagement. As well as a oppurtunity to sign up for the newsletter through mail chimp; this is intented to keep customer engagaed with the busniness, and in the future a letter will be send out each week.
+
+* A function that is appealing and helps the overall interactivity of the site is the star rating system. I have added a 5 star rating system. It is a color changing button that the user can click. This is intended as a future improvement, and is showcases in the ux and with javascript functionialty to so the store owner potential to add more functionality to the site, to raise interaction.
 
 # User Experience/User Interface (UX/UI)
 
@@ -294,7 +346,24 @@ Due to some issues that need to be fixed, it has not been tested yet.
 
 # DEPLOYMENT
 
- I have deployed my project to heroku, I did this using the heroku cli, and the gitub terminal. I have also attached my elephantsql instance. Here is the link: https://oreganooil1-2ce75722cde3.herokuapp.com/
+* I have deployed my project to heroku, I did this using the heroku to connect to github repository. I have set heroku to automatic deploy so it automatically uodates when the website is the git push command is written within the project.
+*  Here is the link: https://oreganooil1-2ce75722cde3.herokuapp.com/.
+
+* In order to deploy e-commerence website I needed to fill out some config vars. Below in the screenshot you will see  I have added links and passwords for email hosting, hosting, the sql database, the cloudinary storage for static files, the secret key etc.
+
+ ![Skärmbild (560)](https://github.com/hnjw-png/oregano-oil/assets/120515252/07d1256e-4b7b-4c8b-a170-887042ac938e)
+
+* During development disable collect static was on and debug was set to true for the purposes of editting the website and viewing errors. But when the site is deployed to heroku, diasble collect needs to be removed and debug set to false in the settings.py inside the project. This is also insures the 404 page appears too  if there was a error.
+
+* A env.py file has been added. Containing the cloudinary url, the database url, the secret key and lastly the devolopment set to 1.
+
+* A Procfile has been added, where the gunicore, wsgi link has been added.
+
+* I deployed the site manally through heroku, by connecting it to my guthub repository.
+ #### 
+
+ 
+
 
 ![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/61702acf-94b0-476b-a95b-2d102fb6114f)
 
