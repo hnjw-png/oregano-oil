@@ -112,8 +112,9 @@ This website fits to size on all types of devices. From laptop to mobile phone.
 
 # Features:
 
-## Register Page:
-![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/be850a8e-eae9-4470-84a0-12210f052d18)
+## Sign up Page:
+
+![Skärmbild (524)](https://github.com/hnjw-png/oregano-oil/assets/120515252/aff6cc6f-06c2-4b8f-a72e-8b58d2803897)
 
 
 
@@ -163,7 +164,8 @@ This website fits to size on all types of devices. From laptop to mobile phone.
 
 
 ### Homepage:
-![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/8d61a654-557a-4e87-8223-0b06cef5e55f)
+
+![Skärmbild (528)](https://github.com/hnjw-png/oregano-oil/assets/120515252/cc504bde-b752-4c36-be73-7a0fb98de884)
 
 
 
