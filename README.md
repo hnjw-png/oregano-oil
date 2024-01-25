@@ -73,6 +73,28 @@ The colour scheme is that of a white background to keep things professional and 
 
 I choose the font '' this font has a nice clear look, which is a little bit like clear fancy handwriting, this stands out well and fits the style of the restaurant.
 
+# User Story
+ ## Section 1
+
+ ![Skärmbild (500)](https://github.com/hnjw-png/oregano-oil/assets/120515252/6ac45ee8-e4b7-43fe-854b-215833ebd49e)
+
+ ## Section 1
+
+ ![Skärmbild (502)](https://github.com/hnjw-png/oregano-oil/assets/120515252/5e8328fe-d1c8-4c0f-bf03-20c5e5eb1e7c)
+
+ ## Section 2
+
+ ![Skärmbild (501)](https://github.com/hnjw-png/oregano-oil/assets/120515252/a9579eb5-de83-41c3-bfcc-203d41e74051)
+
+ ### Section 2
+ 
+![Skärmbild (503)](https://github.com/hnjw-png/oregano-oil/assets/120515252/01e38a38-8ca7-4628-85c8-2d13c2b1811c)
+
+# Diagram of Website Structure
+
+![Skärmbild (504)](https://github.com/hnjw-png/oregano-oil/assets/120515252/3a3872a4-06ef-4b77-a8d1-1e2740d16e28)
+
+
 
 # Wireframes
 ![Skärmbild (505)](https://github.com/hnjw-png/oregano-oil/assets/120515252/7a119086-8eb1-4839-b7ef-9ad5aaba5acc)
