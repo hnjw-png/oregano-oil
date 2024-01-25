@@ -75,13 +75,40 @@ I choose the font '' this font has a nice clear look, which is a little bit like
 
 
 # Wireframes
-ADD WIREFRAMES.
+![Skärmbild (505)](https://github.com/hnjw-png/oregano-oil/assets/120515252/7a119086-8eb1-4839-b7ef-9ad5aaba5acc)
+
+![Skärmbild (506)](https://github.com/hnjw-png/oregano-oil/assets/120515252/df6ecc05-d301-4f37-9303-19877bcdf7bc)
+
+![Skärmbild (508)](https://github.com/hnjw-png/oregano-oil/assets/120515252/60c863bf-c13e-4e8c-b83b-4e3b9abfa691)
+
+![Skärmbild (509)](https://github.com/hnjw-png/oregano-oil/assets/120515252/f7de9bfd-6725-4d0a-8e4c-a0a116d1ea47)
+
+![Skärmbild (510)](https://github.com/hnjw-png/oregano-oil/assets/120515252/999116dd-37c3-42a1-adc3-3df575cba4c2)
+
+![Skärmbild (511)](https://github.com/hnjw-png/oregano-oil/assets/120515252/e60d8179-54e9-49d6-abb1-9b202846f7d8)
+
+![Skärmbild (512)](https://github.com/hnjw-png/oregano-oil/assets/120515252/88c0b62f-327e-4728-91ac-861965357efe)
+
+![Skärmbild (513)](https://github.com/hnjw-png/oregano-oil/assets/120515252/9f521dbd-560f-44e3-b1b0-2498afa882ef)
+
+![Skärmbild (515)](https://github.com/hnjw-png/oregano-oil/assets/120515252/fd6e67c2-7adf-479c-82fc-b93d20593b67)
+
+![Skärmbild (516)](https://github.com/hnjw-png/oregano-oil/assets/120515252/863ac89c-8805-4e3d-bef7-529a770dbf45)
+
+![Skärmbild (517)](https://github.com/hnjw-png/oregano-oil/assets/120515252/eab31038-c7d8-47dc-9b98-72b0e1af5f62)
+
+![Skärmbild (518)](https://github.com/hnjw-png/oregano-oil/assets/120515252/ae1e22bf-39f8-4575-a86c-a45c6128b16c)
+
+
 
 ## Features
 
 # Responsiveness:
 
 This website fits to size on all types of devices. From laptop to mobile phone. 
+
+![Skärmbild (523)](https://github.com/hnjw-png/oregano-oil/assets/120515252/51c26dc1-56b7-45c0-bce2-0fa8c67c0ffe)
+
 
 # Features:
 
