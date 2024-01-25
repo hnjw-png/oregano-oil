@@ -117,13 +117,48 @@ This website fits to size on all types of devices. From laptop to mobile phone.
 
 
 
-## Log in Page:
-![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/6f0eb226-ce41-4c82-bc89-ed289139365f)
+# Log in Page:
+
+![Skärmbild (556)](https://github.com/hnjw-png/oregano-oil/assets/120515252/d218214f-4b73-40cc-aa30-cc54b1d52fdf)
 
 
+## Verify email 
 
-### Products page and ajoining shortcuts:
-![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/affa9df9-16f6-4aec-a0c8-859d269d9e47)
+![Skärmbild (557)](https://github.com/hnjw-png/oregano-oil/assets/120515252/716d7aa5-a5a1-4001-bfaf-fb22bbce8f56)
+
+## Sign out message
+
+![Skärmbild (555)](https://github.com/hnjw-png/oregano-oil/assets/120515252/c9470936-36c1-4be2-8d78-fc148b3cbf0a)
+
+# Sign out 
+
+![Skärmbild (554)](https://github.com/hnjw-png/oregano-oil/assets/120515252/860b4b95-3e95-4531-a19a-60aaaa22e1bd)
+
+# Profile
+
+![Skärmbild (553)](https://github.com/hnjw-png/oregano-oil/assets/120515252/a8881c12-e95b-44e2-a293-a65a28c89115)
+
+# Product Manaagement
+
+![Skärmbild (552)](https://github.com/hnjw-png/oregano-oil/assets/120515252/c75e0135-b50e-4771-a9a9-e9d5e238d5f9)
+
+# Account Options
+
+![Skärmbild (551)](https://github.com/hnjw-png/oregano-oil/assets/120515252/9efc492a-a526-41fe-9183-38ba8132796f)
+
+# Search Bar
+
+![Skärmbild (550)](https://github.com/hnjw-png/oregano-oil/assets/120515252/a6f4d6ad-43e2-44d8-93e5-ee0aee11a6e2)
+
+# Nav Bar
+
+![Skärmbild (549)](https://github.com/hnjw-png/oregano-oil/assets/120515252/e9810830-8f3e-4c64-878f-c9c14dabf9d5)
+
+
+### Shop now button
+
+
+![Skärmbild (548)](https://github.com/hnjw-png/oregano-oil/assets/120515252/778b6635-4a5d-4eaf-a06b-16e5c3966234)
 
 
 
@@ -132,16 +167,76 @@ This website fits to size on all types of devices. From laptop to mobile phone.
 
 
 
-## Basket:
+# Basket:
+
+![Skärmbild (534)](https://github.com/hnjw-png/oregano-oil/assets/120515252/af08fced-d47a-43b8-8004-e1d47e0c9699)
+
+## Empty Basket
+
+![Skärmbild (536)](https://github.com/hnjw-png/oregano-oil/assets/120515252/c874901e-8b31-4af6-b2ed-3454220dfe0f)
 
 
+# Info
 
-## Admin page:
+![Skärmbild (537)](https://github.com/hnjw-png/oregano-oil/assets/120515252/2bf1d2f6-777c-48b9-9b8d-19ac9db1c4d1)
+
+## Likes feature
+
+![Skärmbild (538)](https://github.com/hnjw-png/oregano-oil/assets/120515252/468ba0b8-ce92-4939-9d57-a24537026a5b)
 
 
+# Admin page:
 
-# Possible Future Features:
+![Skärmbild (558)](https://github.com/hnjw-png/oregano-oil/assets/120515252/36afa22b-25b8-457f-83c2-7a0a87649333)
 
+![Skärmbild (527)](https://github.com/hnjw-png/oregano-oil/assets/120515252/f8ee2ed0-5340-4c12-bd5b-ac0a551679db)
+
+![Skärmbild (526)](https://github.com/hnjw-png/oregano-oil/assets/120515252/78893928-b82f-4304-ba70-9e53ca19fc11)
+
+
+# Contact Us Form
+
+![Skärmbild (539)](https://github.com/hnjw-png/oregano-oil/assets/120515252/26487133-346c-4f53-8f7d-865a4d0cee76)
+
+## Successful Contact page
+
+![Skärmbild (540)](https://github.com/hnjw-png/oregano-oil/assets/120515252/891cc2c4-ccfe-4625-ae64-8a809cfc3853)
+
+
+# Testimonials details
+
+![Skärmbild (533)](https://github.com/hnjw-png/oregano-oil/assets/120515252/0db53efd-7d57-43de-9ae8-86f6eb618654)
+
+## Testmonial Form
+
+![Skärmbild (532)](https://github.com/hnjw-png/oregano-oil/assets/120515252/97b1441d-db5e-4c28-847a-1ae9d8434783)
+
+
+# Testimonials Page
+
+![Skärmbild (559)](https://github.com/hnjw-png/oregano-oil/assets/120515252/bc540b91-7ea9-4a0e-8555-cafea9b695c9)
+
+
+# Product Details Display
+
+![Skärmbild (542)](https://github.com/hnjw-png/oregano-oil/assets/120515252/1f1f4526-7195-4c0b-ad7a-6a938f0ba94f)
+
+## Product Star Rating ux 
+
+![Skärmbild (541)](https://github.com/hnjw-png/oregano-oil/assets/120515252/bc6cd6b9-c4c8-45ca-ae21-fe3b44c161bf)
+
+
+# Product Shopping bag
+
+![Skärmbild (544)](https://github.com/hnjw-png/oregano-oil/assets/120515252/681bf75c-40db-4bd3-98fc-829976ff91b9)
+
+# Added Product to Bag
+
+![Skärmbild (543)](https://github.com/hnjw-png/oregano-oil/assets/120515252/b8d6f8a1-9951-4ab1-93f1-f5055f947025)
+
+# Footer/ Mail Chimp Newsletter Sign up
+
+![Skärmbild (547)](https://github.com/hnjw-png/oregano-oil/assets/120515252/d4cdacda-81f1-4dc1-aa6f-8da31e2afb4c)
 
 
 # Techologies used
