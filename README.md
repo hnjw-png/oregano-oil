@@ -28,7 +28,8 @@ Other attribrutes to the site include a useful admin page, where the super user 
   5. oregano oil
   6. health products
 
-  ![Skärmbild (179)](https://github.com/hnjw-png/oregano-oil/assets/120515252/f5b59ecc-4552-41f3-8092-762f05308c3c)
+![Skärmbild (561)](https://github.com/hnjw-png/oregano-oil/assets/120515252/02293e71-1f74-4bb2-a97f-6ba4faedb399)
+
 
 * A robots.txt and sitemaps.xml was added to make the site more truthworthy to the browser, and therefore more likely to appear higher in the search engine.
 
