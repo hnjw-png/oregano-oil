@@ -21,21 +21,21 @@ Other attribrutes to the site include a useful admin page, where the super user 
 When the visitor first visits the restaurant booking system:
 
 * The homepage should be clear of what the websites goals are.
-* The webpage will clearly show you what you can buy.
-* When you chose a item, you should be able to pick how many you would like to pick.
+* The webpage will clearly show you what you can buy, with various ways to access the products list.
+* When you chose a item, you should be able to pick how many you would like to pick. You can do this on click of the product, or at the bag/checkout.
 * The header and footer should be clear and easy for the customer to navigate.
 * The customer should be able to make a account.
-* The customer should be able to create testimonials.
+* The logged in user should be able to create testimonials.
 * The user should be able to toggle the shopping basket, if they wish to add or delete.
 * There should be clear pictures and information of the uses of the oil.
 * The customer should be able to securely pay for a item.
 * The customers log in information and payment information is protected.
-* The customer can fill out a contact form and contact the website owner directy to there email.
+* The customer can fill out a contact form and contact the website.
 * The customer while logged in should be able to 'like' and then 'dislike' the info pages post.
 * The customer can navigate to a bespoke facebook page, directly through the site.
 * The customer should be able to sign up to a newsletter.
 * A logged in customer will be able to edit, update, create and delete there own testimonials.
-* 
+* A star rating is visable next to each product which is interactive.
 
 ## Frequent Visitor goals:
 
@@ -47,14 +47,26 @@ When the visitor first visits the restaurant booking system:
 * The website linking to social media and newsletters promotes business and sales.
 * The site should be a place where customers can find out information about the product.
 * The customer should trust the product, due to the information provided in the site.
-* Customer contact should be smooth, the website should receive all messages.
+* Customer contact should be smooth, the website should receive all messages, through a contact page 
+* A logged in user should be able to create, update and delete there own testimonials.
+* The store ownwer should able to add a product through the site interface and the private admin.
+* The user should be able to update the bag by adding or removing products.
+* The user should be able to log in and the bag remember its contents.
+* The logged in user should be able to save its delivery information.
+* The shopper should be able to read testimonials and the info page, but cannot add testimonial or like the article.
+* The logged in user should be able to like the info article, then these likes will be registered in sql database, for use of the store owner, for  a extra avenue to look at site productivity.
+* The user should get feedback from the site that there message has been send through the contact page. 
+* The store owneer through the admin should be able to delete irrevalent testimonials.
+* The store owner should be able to see all orders through the admin page.
+* The store owner will be able to see all listed profiles in the admin.
+*  
 
 ## Website owner goals:
 
 * Provide a place the website owner can freely edit at anytime(admin page)
 * Provide health advice to customers.
 * Provide a affordable product.
-* Provide a product and a support network.
+* Provide a product and a sharing network.
 * Promote the uses of herbal oils.
 * Generate sales through trust and pricing.
 
