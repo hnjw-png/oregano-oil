@@ -111,7 +111,7 @@ When the visitor first visits the restaurant booking system:
 * The shopper should be able to read testimonials and the info page, but cannot add testimonial or like the article.
 * The logged in user should be able to like the info article, then these likes will be registered in sql database, for use of the store owner, for  a extra avenue to look at site productivity.
 * The user should get feedback from the site that there message has been send through the contact page. 
-* The store owneer through the admin should be able to delete irrevalent testimonials.
+* The store owner through the admin should be able to delete irrevalent testimonials.
 * The store owner should be able to see all orders through the admin page.
 * The store owner will be able to see all listed profiles in the admin.
 *  
@@ -367,17 +367,17 @@ Django help sheet, code institute material, stack overflow and tutoring advice. 
 ![Skärmbild (573)](https://github.com/hnjw-png/oregano-oil/assets/120515252/92236bde-2c35-4246-99b3-8e574e5692e3)
 
 # Lighthouse: 
+
 # CSS and HTML Validator:
 
+There are some errors inside the validator but it does not effect the overall effectivity of the site.
 
 # DEPLOYMENT
 
 * I have deployed my project to heroku, I did this using the heroku to connect to github repository. I have set heroku to automatic deploy so it automatically uodates when the website is the git push command is written within the project.
 *  Here is the link: https://oreganooil1-2ce75722cde3.herokuapp.com/.
 
-* In order to deploy e-commerence website I needed to fill out some config vars. Below in the screenshot you will see  I have added links and passwords for email hosting, hosting, the sql database, the cloudinary storage for static files, the secret key etc.
-
- ![Skärmbild (560)](https://github.com/hnjw-png/oregano-oil/assets/120515252/07d1256e-4b7b-4c8b-a170-887042ac938e)
+* In order to deploy e-commerence website I needed to fill out some config vars. I have added links and passwords for email hosting, hosting, the sql database, the cloudinary storage for static files, the secret key etc.
 
 * During development disable collect static was on and debug was set to true for the purposes of editting the website and viewing errors. But when the site is deployed to heroku, diasble collect needs to be removed and debug set to false in the settings.py inside the project. This is also insures the 404 page appears too  if there was a error.
 
@@ -386,12 +386,7 @@ Django help sheet, code institute material, stack overflow and tutoring advice. 
 * A Procfile has been added, where the gunicore, wsgi link has been added.
 
 * I deployed the site manally through heroku, by connecting it to my guthub repository.
- #### 
 
- 
-
-
-![image](https://github.com/hnjw-png/oregano-oil/assets/120515252/61702acf-94b0-476b-a95b-2d102fb6114f)
 
 # Bug fixes
 
@@ -404,7 +399,7 @@ Django help sheet, code institute material, stack overflow and tutoring advice. 
 * Right now you can register and log in, but right now the product page still have some issues I need to go and look back upon.
 
 
-copy
+## images pixabay (credits)
 
 https://pixabay.com/sv/photos/oregano-%C3%A4ng-n%C3%A4rbild-blomning-rosa-7317396/
 
