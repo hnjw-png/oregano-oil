@@ -1,4 +1,4 @@
-#OREGANO OIL E-COMMERCE, SHOP AND SHARE.
+# OREGANO OIL E-COMMERCE, SHOP AND SHARE.
 ## Purpose of the Website
 
 The purpose of this e-commerence website, is that it is a shop for oregono oil and other infusions. You will be able to buy different types of infused oil, as well as pure oil. 
@@ -10,7 +10,7 @@ The user whilst logged in should be able to create their own testimonials, like 
 
 Primarily being a site to purchase oregano oil and ajoining products, the user logged in or out should be able to add a product to their basket, navigate to the basket and purchase there items, using stripe. If the user is a signed up user, they can save what's in their basket.
 
-Other attribrutes to the site include a useful admin page, where the super user can easily navigate and add/edit or delete products.Update new orders manually, add new products manually, check users, check verified emails, as well as edit testimonials etc. As well as a  product management page on the website, which allows the store owner (superusers) to add/edit/delete a product.
+Other attribrutes to the site include a useful admin page, where the super user can easily navigate and add/edit or delete products.Update new orders manually, add new products manually, check users, check verified emails, as well as edit testimonials etc. The super user can also see current active orders, current verified emails etc.  As well as a  product management page on the website, which allows the store owner (superusers) to add/edit/delete a product.
 
 The user can perform crud with there own testimonials. The user can save their address and orders.
 A star rating is implemented for future use of the site, in the future it will give me feedbck, for now its only color changing.
@@ -130,11 +130,11 @@ When the visitor first visits the restaurant booking system:
 
 The colour scheme is that of a white background to keep things professional and then pops of colour in the site. The colours will be based upon more natural hues, such as:
 
-* blue, green and yellow.
+* blue in some places, but mostly green as a base color of the site.
 * normal shade of white
 * basic shade of black
 
-  The reason for the colou choice is a health product, so it made sense to use more natural colours from nature.
+  The reason for the colour choice is a health product, so it made sense to use more natural colours from nature.
 
 # Typography
 
@@ -338,6 +338,7 @@ Languages used:
 * CSS
 * PYTHON
 * DJANGO
+* JAVASCRIPT
 
 # Applications used:
 
