@@ -1,5 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
+#OREGANO OIL E-COMMERCE, SHOP AND SHARE.
 ## Purpose of the Website
 
 The purpose of this e-commerence website, is that it is a shop for oregono oil and other infusions. You will be able to buy different types of infused oil, as well as pure oil. 
