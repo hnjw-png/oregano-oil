@@ -11,7 +11,10 @@ The user whilst logged in should be able to create their own testimonials, like 
 
 Primarily being a site to purchase oregano oil and ajoining products, the user logged in or out should be able to add a product to their basket, navigate to the basket and purchase there items, using stripe. If the user is a signed up user, they can save what's in their basket.
 
-Other attribrutes to the site include a useful admin page, where the super user can easily navigate and add/edit or delete products.As well as a  product management page on the website, which allows the allowed users to add a product.
+Other attribrutes to the site include a useful admin page, where the super user can easily navigate and add/edit or delete products.Update new orders manually, add new products manually, check users, check verified emails, as well as edit testimonials etc. As well as a  product management page on the website, which allows the store owner (superusers) to add/edit/delete a product.
+
+The user can perform crud with there own testimonials. The user can save their address and orders.
+A star rating is implemented for future use of the site, in the future it will give me feedbck, for now its only color changing.
 
 # Business Plan
 
@@ -19,7 +22,7 @@ Other attribrutes to the site include a useful admin page, where the super user 
 
 * Some things had to be thought out before designing the site, the first is the use of keywords and useful words inside the website. With the intention of improving sales with web optimization, by using certain more popular words inside your website can generate users.
 
-* Here is a list of some key words that were useful and less useful for the website. (with use of the worktraceker.com.)
+* Here is a list of some key words that were useful and less useful for the website. (with use of the worktracker.com.)
 
   1. oregano
   2. health
@@ -350,8 +353,18 @@ Languages used:
 ## Sources
 Django help sheet, code institute material, stack overflow and tutoring advice. I had help from a tutor to set up my env.py file. And I go advice on heroku, and he helped me fix a bug as I duplicated my app.
 
-## Testing
-Due to some issues that need to be fixed, it has not been tested yet. 
+# Testing
+* See below table of tests:
+
+# Section 1 ( what it should do, and results, the first half)
+![Skärmbild (562)](https://github.com/hnjw-png/oregano-oil/assets/120515252/ef22f8d2-71a8-4ef6-8889-815c8193e1ed)
+
+![Skärmbild (572)](https://github.com/hnjw-png/oregano-oil/assets/120515252/135c1d56-af59-4366-b837-1918541b618e)
+
+## Section 2 (the second half)
+![Skärmbild (563)](https://github.com/hnjw-png/oregano-oil/assets/120515252/b7aee9c0-3782-480d-bddc-1413b587dea5)
+
+![Skärmbild (573)](https://github.com/hnjw-png/oregano-oil/assets/120515252/92236bde-2c35-4246-99b3-8e574e5692e3)
 
 # Lighthouse: 
 # CSS and HTML Validator:
