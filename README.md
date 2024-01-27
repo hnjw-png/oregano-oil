@@ -1,4 +1,4 @@
-# OREGANO OIL E-COMMERCE, SHOP AND SHARE.
+![family-5227815_1280](https://github.com/hnjw-png/oregano-oil/assets/120515252/80b0c12e-a42e-4888-96cf-a0b5a08052fb)# OREGANO OIL E-COMMERCE, SHOP AND SHARE.
 ## Purpose of the Website
 
 The purpose of this e-commerence website, is that it is a shop for oregono oil and other infusions. You will be able to buy different types of infused oil, as well as pure oil. 
@@ -368,9 +368,18 @@ Django help sheet, code institute material, stack overflow and tutoring advice. 
 
 # Lighthouse: 
 
+* Lighthouse app does not work on my laptop, but from own testing the website fulfils all needs for the store owner, customer, and logged in user. The website is set to change when used on smaller mobile screens etc. Does not take a long time to load and all images and functions are working. A later improvement would be to check with lighthouse.
+
 # CSS and HTML Validator:
 
-There are some errors inside the validator but it does not effect the overall effectivity of the site.
+* There are some errors inside the html validator but it does not effect the overall effectivity of the site. These error things like aria labels , but they effectively in the website. These errors in the future can be fixed, but its made slighty difficuly by there being some mnay pages, ad the validator does not specify which file. To fix these errors would be a future improvement to the site.
+
+* There are 15 errors in the html, which do no effect the functionailty of the site, in the future these coud be fixed, to keep good work manner.
+
+* There is one error inside the css validator, but this small error certainly effect the overall functionality of the site.
+
+* ![Skärmbild (582)](https://github.com/hnjw-png/oregano-oil/assets/120515252/f9dbd7eb-aa01-419f-9116-608ffac36ee8)
+
 
 # DEPLOYMENT
 
@@ -385,7 +394,7 @@ There are some errors inside the validator but it does not effect the overall ef
 
 * A Procfile has been added, where the gunicore, wsgi link has been added.
 
-* I deployed the site manally through heroku, by connecting it to my guthub repository.
+* I deployed the site manually through heroku, by connecting it to my guthub repository.
 
 
 # Bug fixes
@@ -403,6 +412,10 @@ There are some errors inside the validator but it does not effect the overall ef
 * In the future update the likes model wil be improved so that its more easily accessible in the admin panel. In the website the likes section will be improved by it remembering its amount of likes before being cliked by the user.
 
 * The confirmation email should be improved by adding companies details instead of saying 'example'.
+
+* The heroku link is : 
+https://oreganooil1-2ce75722cde3.herokuapp.com/
+
 ## images pixabay (credits)
 
 https://pixabay.com/sv/photos/oregano-%C3%A4ng-n%C3%A4rbild-blomning-rosa-7317396/
