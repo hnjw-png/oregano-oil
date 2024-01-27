@@ -1,4 +1,4 @@
-![family-5227815_1280](https://github.com/hnjw-png/oregano-oil/assets/120515252/80b0c12e-a42e-4888-96cf-a0b5a08052fb)# OREGANO OIL E-COMMERCE, SHOP AND SHARE.
+# OREGANO OIL E-COMMERCE, SHOP AND SHARE.
 ## Purpose of the Website
 
 The purpose of this e-commerence website, is that it is a shop for oregono oil and other infusions. You will be able to buy different types of infused oil, as well as pure oil. 
@@ -138,9 +138,10 @@ The colour scheme is that of a white background to keep things professional and 
 
 # Typography
 
-I choose the font '' this font has a nice clear look, which is a little bit like clear fancy handwriting, this stands out well and fits the style of the restaurant.
+I choose the font 'lato' this font has a nice clear look, which is a little bit like clear fancy handwriting, this stands out well and fits the style of the restaurant.
 
 # User Story
+
  ## Section 1
 
  ![Skärmbild (500)](https://github.com/hnjw-png/oregano-oil/assets/120515252/6ac45ee8-e4b7-43fe-854b-215833ebd49e)
@@ -347,8 +348,8 @@ Languages used:
 * GitHub to store the projects code.
 * Gitpages to deploy the site.
 * Chrome Developer Tools for layout and responsive testing.
-* favICO.com for creating favicon.
 * W3 Validator to test html and css code.
+* In future a favicon can be added.
 
 ## Sources
 Django help sheet, code institute material, stack overflow and tutoring advice. I had help from a tutor to set up my env.py file. And I go advice on heroku, and he helped me fix a bug as I duplicated my app.
