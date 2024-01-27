@@ -390,15 +390,19 @@ There are some errors inside the validator but it does not effect the overall ef
 
 # Bug fixes
 
-* There is still much left to do on this site, I have created the django model for the social media account, products, home page and base header and logo.
+* In the future, the star rating system will be more than just a interactive color changing addition to the product details.  In the future the star rating system will give feedback to the user that they have rated the product.
 
-*In the future I will add all the products and a section for testimonials.
+* Another addition could be instead of a direct message, the logged in user could be directed to a review page, where the user has the option to file out a form with a review, as well or leave a star rating.
 
-* Right now ths css does not appear due to a static file problem.
+* This the star rating ux using javascript, is used to showcase a potential new feature to the site.
 
-* Right now you can register and log in, but right now the product page still have some issues I need to go and look back upon.
+* The likes mmodel seems to forget its amount of likes until clicked by a logged in user.
 
+* Though the likes model gives the store owner the oppurtunity to view the amount of likes given by a user or many users through the sql database or through clicking the user in the admin panel.
 
+* In the future update the likes model wil be improved so that its more easily accessible in the admin panel. In the website the likes section will be improved by it remembering its amount of likes before being cliked by the user.
+
+* The confirmation email should be improved by adding companies details instead of saying 'example'.
 ## images pixabay (credits)
 
 https://pixabay.com/sv/photos/oregano-%C3%A4ng-n%C3%A4rbild-blomning-rosa-7317396/
